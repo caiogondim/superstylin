@@ -1,0 +1,10 @@
+<svg width="147px" height="209px" viewBox="0 0 147 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="noun_380904_cc" fill-rule="nonzero" fill="#343334">
+            <g id="Group">
+                <path d="M147,209 L147,0 L0,0 L0,209 L147,209 Z M73.5,20.9 C85.05,20.9 94.5,30.305 94.5,41.8 C94.5,53.295 85.05,62.7 73.5,62.7 C61.95,62.7 52.5,53.295 52.5,41.8 C52.5,30.305 61.95,20.9 73.5,20.9 Z M73.5,83.6 C101.85,83.6 126,106.59 126,135.85 C126,165.11 101.85,188.1 73.5,188.1 C44.1,188.1 21,165.11 21,135.85 C21,106.59 44.1,83.6 73.5,83.6 Z" id="Shape"></path>
+                <ellipse id="Oval" cx="73.5" cy="135.85" rx="21" ry="20.9"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

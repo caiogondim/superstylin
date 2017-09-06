@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suprstylin.css</title>
+  <link rel="icon" type="image/png" href="./icon.png" />
+  <link rel="stylesheet" href="src/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <style>
+
+    section {
+      display: flex;
+      justify-content: center;
+      padding: 3.815rem 0;
+      /*min-height: 100vh;*/
+    }
+
+    /* Header
+    ––––––––––––––––––––––––––––––––– */
+    .header__container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 0;
+    }
+
+    .header__logo {
+      width: 5rem;
+    }
+
+    .header__logo-text {
+      display: block;
+    }
+
+    .header__table-of-contents {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .header__table-of-contents-item {
+      min-width: 49%;
+      flex-basis: 50%;
+      flex-shrink: 1;
+      display: inline-block;
+    }
+
+    @media (max-width: 500px) {
+      .header__table-of-contents-item {
+        min-width: 100%;
+      }
+    }
+
+/*    .typography__color:hover {
+      color: #FDD600;
+    }
+
+    .forms__color:hover {
+      color: #B4E051;
+    }*/
+
+    /* Typography
+    ––––––––––––––––––––––––––––––––– */
+    /*.typography__color {
+      color: #FDD600;
+    }*/
+
+    /* Buttons
+    ––––––––––––––––––––––––––––––––– */
+/*    .buttons__color {
+      color: #B4E051;
+    }*/
+
+    /* Forms
+    ––––––––––––––––––––––––––––––––– */
+/*    .forms__color {
+      color: #6EEDD8;
+    }*/
+
+    /* Tables
+    ––––––––––––––––––––––––––––––––– */
+/*    .tables__color {
+      color: #7CC7FF;
+    }*/
+
+    /* Code
+    ––––––––––––––––––––––––––––––––– */
+/*    .code__color {
+      color: #D7AAFF;
+    }*/
+
+    /* Blockquote
+    ––––––––––––––––––––––––––––––––– */
+/*    .blockquote__color {
+      color: #FF9EEE;
+    }*/
+
+    /* List
+    ––––––––––––––––––––––––––––––––– */
+/*    .list__color {
+      color: #FFA5B4;
+    }*/
+
+    .list__unordered-list {
+      display: inline-block;
+      width: 49%;
+    }
+
+    .list__ordered-list {
+      display: inline-block;
+      width: 49%;
+    }
+
+    @media (max-width: 500px) {
+      .list__unordered-list {
+        min-width: 100%;
+      }
+
+      .list__ordered-list {
+        min-width: 100%;
+      }
+    }
+
+    /* Util
+    ––––––––––––––––––––––––––––––––– */
+    .u-legible {
+      max-width: 66ch;
+      width: 66ch;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    .u-separator {
+      border-top: 2px solid #343334;
+      padding-top: 0.5rem;
+      padding-bottom: 2rem;
+    }
+
+  </style>
+  <section class="header__container">
+    <div class="u-legible">
+      <header>
+        <h2><img src="./icon.svg" class="header__logo" /></h2>
+        <h2 class="header__logo-text">Suprstylin</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sed odio facilis dignissimos laborum ut soluta <a href="">lorem</a> rerum! Corrupti quibusdam, quas error natus labore libero ducimus distinctio obcaecati nobis maxime neque.</p>
+      <div class="header__header__table-of-contents">
+        <a href="#typography" class="
+          header__table-of-contents-item
+          typography__color
+        "><h6>TYPOGRAPHY</h6></a>
+        <a href="#buttons" class="
+          header__table-of-contents-item
+          buttons__color
+        "><h6>BUTTONS</h6></a>
+        <a href="#forms" class="
+          header__table-of-contents-item
+          forms__color
+        "><h6>FORMS</h6></a>
+        <a href="#forms" class="
+          header__table-of-contents-item
+          tables__color
+        "><h6>TABLES</h6></a>
+        <a href="#code" class="
+          header__table-of-contents-item
+          code__color
+        "><h6>CODE</h6></a>
+        <a href="#blockquote" class="
+          header__table-of-contents-item
+          blockquote__color
+        "><h6>BLOCKQUOTE</h6></a>
+        <a href="#list" class="
+          header__table-of-contents-item
+          list__color
+        "><h6>LIST</h6></a>
+        <a href="#list" class="
+          header__table-of-contents-item
+        "><h6>COLORS</h6></a>
+      </div>
+    </div>
+  </section>
+  <section class="section-typography">
+    <div class="container u-legible">
+      <h6 class="typography__color u-separator" id="typography">TYPOGRAPHY</h6>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci quisquam veniam, odio illum sed maiores aspernatur consequuntur excepturi quos! Repellat unde excepturi vitae aut voluptas fugiat voluptatum iusto, quaerat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci quisquam veniam, odio illum sed maiores aspernatur consequuntur excepturi quos! Repellat unde excepturi vitae aut voluptas fugiat voluptatum iusto, quaerat.
+      </p>
+    </div>
+  </section>
+  <section class="section-buttons">
+    <div class="container u-legible">
+      <h6 class="buttons__color u-separator" id="buttons">BUTTONS</h6>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum doloribus nisi, excepturi earum debitis quisquam? Error accusantium autem rerum assumenda iusto voluptates vero, doloribus, repellendus aliquid ipsum, iure beatae sunt!
+      </p>
+      <p>
+        <!-- Standard buttons -->
+        <a class="button" href="#">Anchor button</a>
+        <button>Button element</button>
+        <input type="submit" value="Submit input" />
+        <input type="button" value="Button input" />
+      </p>
+      <p>
+        <!-- Primary buttons -->
+        <a class="button button-primary" href="#">Anchor button</a>
+        <button class="button-primary">Button element</button>
+        <input class="button-primary" type="submit" value="Submit input">
+        <input class="button-primary" type="button" value="Button input">
+      </p>
+    </div>
+  </section>
+  <section class="section-typography">
+    <div class="container u-legible">
+      <h6 class="forms__color u-separator" id="forms">FORMS</h6>
+      <form>
+        <p>
+          <label for="exampleEmailInput">Your email</label>
+          <input class="full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+        </p>
+        <p>
+          <label for="exampleRecipientInput">Reason for contacting</label>
+          <select class="full-width" id="exampleRecipientInput">
+            <option value="Option 1">Questions</option>
+            <option value="Option 2">Admiration</option>
+            <option value="Option 3">Can I get your number?</option>
+          </select>
+        </p>
+        <p>
+          <label for="exampleMessage">Message</label>
+          <textarea class="full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+        </p>
+        <p>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+        </p>
+        <input type="reset" value="Reset">
+        <input class="button-primary" type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+  <section class="section-typography">
+    <div class="container u-legible">
+      <h6 class="tables__color u-separator" id="tables">TABLES</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsam quibusdam libero, nobis earum totam doloremque veritatis expedita deserunt cum et distinctio, placeat dolorum in maxime, voluptates ratione optio nihil!</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stephen Curry</td>
+            <td>27</td>
+            <td>1,91</td>
+          </tr>
+          <tr>
+            <td>Klay Thompson</td>
+            <td>25</td>
+            <td>2,01</td>
+          </tr>
+        </tbody>
+      </table>
+
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+      &lt;th&gt;Height&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Stephen Curry&lt;/td&gt;
+      &lt;td&gt;27&lt;/td&gt;
+      &lt;td&gt;1,91&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Klay Thompson&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+      &lt;td&gt;2,01&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+    </div>
+  </section>
+  <section>
+    <div class="container u-legible">
+      <h6 class="code__color u-separator" id="code">CODE</h6>
+      <p>
+        Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like this. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.
+      </p>
+<pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container u-legible">
+      <h6 class="blockquote__color u-separator" id="blockquote">BLOCKQUOTE</h6>
+      <blockquote>
+        <p>Being abstract is something profoundly different from being vague... The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.
+        </p>
+        <footer>— Dijkstra</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section>
+    <div class="container u-legible">
+      <h6 class="list__color u-separator" id="list">LIST</h6>
+      <div class="list__unordered-list">
+        <p>Unordered list:</p>
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Dolor</li>
+        </ul>
+      </div>
+      <div class="list__ordered-list">
+        <p>Ordered list:</p>
+        <ol>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Dlior</li>
+        </ol>
+      </div>
+
+<pre><code>&lt;!-- Unordered list --&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lorem&lt;/li&gt;
+  &lt;li&gt;Ipsum&lt;/li&gt;
+  &lt;li&gt;Dolor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered list --&gt;
+&lt;ol&gt;
+  &lt;li&gt;Lorem&lt;/li&gt;
+  &lt;li&gt;Ipsum&lt;/li&gt;
+  &lt;li&gt;Dlior&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+    </div>
+  </section>
+
+  <section class="section-color">
+
+    <div class="container u-legible">
+      <h6 class="u-separator">COLOR</h6>
+      <h2>Yellow</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #FDE876;">
+          </div>
+          <p>Yellow 10<br>#FDE876</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FDD600;">
+          </div>
+          <p>Yellow 20<bri>
+          #FDD600</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #DBB100;">
+          </div>
+          <p>Yellow 30<br>
+          #DBB100</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #BE9B00;">
+          </div>
+          <p>Yellow 40<br>
+          #BE9B00</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #8C7300;">
+          </div>
+          <p>Yellow 50<br>
+          #8C7300</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #735F00;">
+          </div>
+          <p>Yellow 60<br>
+          #735F00</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #574A00;">
+          </div>
+          <p>Yellow 70<br>
+          #574A00</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #3C3200;">
+          </div>
+          <p>Yellow 80<br>
+          #3C3200</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #281E00;">
+          </div>
+          <p>Yellow 90<br>
+          #281E00</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #020100;">
+          </div>
+          <p>Yellow 100<br>
+          #020100</p>
+        </li>
+      </ul>
+
+      <h2>Green</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #C8F08F;">
+          </div>
+          <p>Green 10<br>
+          #C8F08F</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #B4E051;">
+          </div>
+          <p>Green 20<br>
+          #B4E051</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #8CD211;">
+          </div>
+          <p>Green 30<br>
+          #8CD211</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #5AA700;">
+          </div>
+          <p>Green 40<br>
+          #5AA700</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #4B8400;">
+          </div>
+          <p>Green 50<br>
+          #4B8400</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #2D660A;">
+          </div>
+          <p>Green 60<br>
+          #2D660A</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #144D14;">
+          </div>
+          <p>Green 70<br>
+          #144D14</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #0A3C02;">
+          </div>
+          <p>Green 80<br>
+          #0A3C02</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #0C2808;">
+          </div>
+          <p>Green 90<br>
+          #0C2808</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #010200;">
+          </div>
+          <p>Green 100<br>
+          #010200</p>
+        </li>
+      </ul>
+
+      <h2>Teal</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #A7FAE6;">
+          </div>
+          <p>Teal 10<br>
+          #A7FAE6</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #6EEDD8;">
+          </div>
+          <p>Teal 20<br>
+          #6EEDD8</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #41D6C3;">
+          </div>
+          <p>Teal 30<br>
+          #41D6C3</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #00B4A0;">
+          </div>
+          <p>Teal 40<br>
+          #00B4A0</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #008571;">
+          </div>
+          <p>Teal 50<br>
+          #008571</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #006D5D;">
+          </div>
+          <p>Teal 60<br>
+          #006D5D</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #005448;">
+          </div>
+          <p>Teal 70<br>
+          #005448</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #003C32;">
+          </div>
+          <p>Teal 80<br>
+          #003C32</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #012B22;">
+          </div>
+          <p>Teal 90<br>
+          #012B22</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #000202;">
+          </div>
+          <p>Teal 100<br>
+          #000202</p>
+        </li>
+      </ul>
+
+      <h2>Blue</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #C0E6FF;">
+          </div>
+          <p>Blue 10<br>
+          #C0E6FF</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #7CC7FF;">
+          </div>
+          <p>Blue 20<br>
+          #7CC7FF</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #5AAAFA;">
+          </div>
+          <p>Blue 30<br>
+          #5AAAFA</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #5596E6;">
+          </div>
+          <p>Blue 40<br>
+          #5596E6</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #4178BE;">
+          </div>
+          <p>Blue 50<br>
+          #4178BE</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #325C80;">
+          </div>
+          <p>Blue 60<br>
+          #325C80</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #264A60;">
+          </div>
+          <p>Blue 70<br>
+          #264A60</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #1D3649;">
+          </div>
+          <p>Blue 80<br>
+          #1D3649</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #152935;">
+          </div>
+          <p>Blue 90<br>
+          #152935</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #010205;">
+          </div>
+          <p>Blue 100<br>
+          #010205</p>
+        </li>
+      </ul>
+
+      <h2>Purple</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #EED2FF;">
+          </div>
+          <p>Purple 10<br>
+          #EED2FF</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #D7AAFF;">
+          </div>
+          <p>Purple 20<br>
+          #D7AAFF</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #BA8FF7;">
+          </div>
+          <p>Purple 30<br>
+          #BA8FF7</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #AF6EE8;">
+          </div>
+          <p>Purple 40<br>
+          #AF6EE8</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #9855D4;">
+          </div>
+          <p>Purple 50<br>
+          #9855D4</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #734098;">
+          </div>
+          <p>Purple 60<br>
+          #734098</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #562F72;">
+          </div>
+          <p>Purple 70<br>
+          #562F72</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #412356;">
+          </div>
+          <p>Purple 80<br>
+          #412356</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #311A41;">
+          </div>
+          <p>Purple 90<br>
+          #311A41</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #030103;">
+          </div>
+          <p>Purple 100<br>
+          #030103</p>
+        </li>
+      </ul>
+
+      <h2>Magenta</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #FFD2FF;">
+          </div>
+          <p>Magenta 10<br>
+          #FFD2FF</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FF9EEE;">
+          </div>
+          <p>Magenta 20<br>
+          #FF9EEE</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FF71D4;">
+          </div>
+          <p>Magenta 30<br>
+          #FF71D4</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FF3CA0;">
+          </div>
+          <p>Magenta 40<br>
+          #FF3CA0</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #DB2780;">
+          </div>
+          <p>Magenta 50<br>
+          #DB2780</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #A6266E;">
+          </div>
+          <p>Magenta 60<br>
+          #A6266E</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #7C1C58;">
+          </div>
+          <p>Magenta 70<br>
+          #7C1C58</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #601146;">
+          </div>
+          <p>Magenta 80<br>
+          #601146</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #3A0B2E;">
+          </div>
+          <p>Magenta 90<br>
+          #3A0B2E</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #040102;">
+          </div>
+          <p>Magenta 100<br>
+          #040102</p>
+        </li>
+      </ul>
+
+      <h2>Red</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #FFD2DD;">
+          </div>
+          <p>Red 10<br>
+          #FFD2DD</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FFA5B4;">
+          </div>
+          <p>Red 20<br>
+          #FFA5B4</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FF7D87;">
+          </div>
+          <p>Red 30<br>
+          #FF7D87</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FF5050;">
+          </div>
+          <p>Red 40<br>
+          #FF5050</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #E71D32;">
+          </div>
+          <p>Red 50<br>
+          #E71D32</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #AD1625;">
+          </div>
+          <p>Red 60<br>
+          #AD1625</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #8C101C;">
+          </div>
+          <p>Red 70<br>
+          #8C101C</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #6E0A1E;">
+          </div>
+          <p>Red 80<br>
+          #6E0A1E</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #4C0A17;">
+          </div>
+          <p>Red 90<br>
+          #4C0A17</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #040001;">
+          </div>
+          <p>Red 100<br>
+          #040001</p>
+        </li>
+      </ul>
+
+      <h2>Orange</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #FFD791;">
+          </div>
+          <p>Orange 10<br>
+          #FFD791</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FFA573;">
+          </div>
+          <p>Orange 20<br>
+          #FFA573</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FF7832;">
+          </div>
+          <p>Orange 30<br>
+          #FF7832</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #FF5003;">
+          </div>
+          <p>Orange 40<br>
+          #FF5003</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #D74108;">
+          </div>
+          <p>Orange 50<br>
+          #D74108</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #A53725;">
+          </div>
+          <p>Orange 60<br>
+          #A53725</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #872A0F;">
+          </div>
+          <p>Orange 70<br>
+          #872A0F</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #6D120F;">
+          </div>
+          <p>Orange 80<br>
+          #6D120F</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #43100B;">
+          </div>
+          <p>Orange 90<br>
+          #43100B</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #030100;">
+          </div>
+          <p>Orange 100<br>
+          #030100</p>
+        </li>
+      </ul>
+
+      <h2>Gray</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #eaeaea;">
+          </div>
+          <p>Gray 10<br>
+          #eaeaea</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #d8d8d8;">
+          </div>
+          <p>Gray 20<br>
+          #d8d8d8</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #c0bfc0;">
+          </div>
+          <p>Gray 30<br>
+          #c0bfc0</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #a6a5a6;">
+          </div>
+          <p>Gray 40<br>
+          #a6a5a6</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #949394;">
+          </div>
+          <p>Gray 50<br>
+          #949394</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #777677;">
+          </div>
+          <p>Gray 60<br>
+          #777677</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #595859;">
+          </div>
+          <p>Gray 70<br>
+          #595859</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #464646;">
+          </div>
+          <p>Gray 80<br>
+          #464646</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #343334;">
+          </div>
+          <p>Gray 90<br>
+          #343334</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #272727;">
+          </div>
+          <p>Gray 100<br>
+          #272727</p>
+        </li>
+      </ul>
+
+      <h2>Neutral White</h2>
+      <ul>
+        <li>
+          <div class="color-block" style="background-color: #fcfcfc;">
+          </div>
+          <p>Neutral White 1<br>
+          #fcfcfc</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #f9f9f9;">
+          </div>
+          <p>Neutral White 2<br>
+          #f9f9f9</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #f6f6f6;">
+          </div>
+          <p>Neutral White 3<br>
+          #f6f6f6</p>
+        </li>
+        <li>
+          <div class="color-block" style="background-color: #f3f3f3;">
+          </div>
+          <p>Neutral White 4<br>
+          #f3f3f3</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
