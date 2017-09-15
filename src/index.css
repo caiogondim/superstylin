@@ -340,11 +340,32 @@ ol, ul {
   margin-bottom: 1.25rem;
 }
 
+/* Keyboard
+––––––––––––––––––––––––––––––––– */
+kbd {
+  display: inline-block;
+  padding: 0 0.328rem;
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    Menlo,
+    Courier,
+    monospace
+  ;
+  font-size: 0.64rem;
+  color: #343334;
+  vertical-align: middle;
+  background-color: #f9f9f9;
+  border: solid 1px #d8d8d8;
+  border-bottom: solid 2px #a6a5a6;
+}
+
 /* Util
 ––––––––––––––––––––––––––––––––– */
 .u-legible-width {
   max-width: 66ch;
-  width: 66ch;
+  width: 100%;
 }
 
 .u-full-width {
