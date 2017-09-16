@@ -1,19 +1,22 @@
 /* Scale major third
 ––––––––––––––––––––––––––––––––– */
-/* 3.815rem */
-/* 3.052rem */
-/* 2.441rem */
-/* 1.953rem */
-/* 1.563rem */
-/* 1.25rem */
-/* 1rem */
-/* 0.8rem */
-/* 0.64rem */
-/* 0.512rem */
-/* 0.41rem */
-/* 0.328rem */
-/* 0.262rem */
-/* 0.209rem */
+
+/*
+3.815rem
+3.052rem
+2.441rem
+1.953rem
+1.563rem
+1.25rem
+1rem
+0.8rem
+0.64rem
+0.512rem
+0.41rem
+0.328rem
+0.262rem
+0.209rem
+*/
 
 /* Root
 ––––––––––––––––––––––––––––––––– */
@@ -28,7 +31,8 @@ html {
   font-family:
     -apple-system,
     BlinkMacSystemFont,
-    'avenir next', avenir,
+    'avenir next',
+    avenir,
     'helvetica neue',
     helvetica,
     ubuntu,
@@ -36,8 +40,7 @@ html {
     noto,
     'segoe ui',
     arial,
-    sans-serif
-  ;
+    sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -55,8 +58,13 @@ body {
 /* Typography
 ––––––––––––––––––––––––––––––––– */
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1rem 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem;
   font-weight: bold;
 }
 
@@ -107,7 +115,7 @@ p {
 
 a {
   color: #343334;
-  text-decoration-color: #D8D8D8;
+  text-decoration-color: #d8d8d8;
 }
 
 a:hover {
@@ -132,7 +140,6 @@ input[type=button],
 button {
   padding: 1rem 1.25rem;
   font-size: 1rem;
-  border: none;
   border-radius: 0;
   border: 2px solid #d8d8d8;
   background-color: #d8d8d8;
@@ -178,7 +185,7 @@ button.button-primary:focus,
 input[type=submit].button-primary:focus,
 input[type=reset].button-primary:focus,
 input[type=button].button-primary:focus {
-  border-color: #4178BE;
+  border-color: #4178be;
 }
 
 /* Form
@@ -206,8 +213,10 @@ input[type=checkbox] {
   height: 1rem;
 }
 
-input:focus, select:focus, textarea:focus {
-  border-color: #5AAAFA;
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #5aaafa;
   outline: none;
 }
 
@@ -255,8 +264,9 @@ input[type=checkbox] {
 
 input[type=checkbox]:focus,
 input[type=checkbox]:checked:focus {
-  border-color: #5AAAFA;
+  border-color: #5aaafa;
 }
+
 input[type=checkbox]:hover {
   cursor: pointer;
 }
@@ -276,7 +286,8 @@ table {
   margin-bottom: 1.25rem;
 }
 
-th, td {
+th,
+td {
   padding: 0.5rem 0.5rem 0.5rem 0;
   margin: 0;
 }
@@ -285,7 +296,6 @@ th {
   font-weight: bold;
   text-align: left;
   border-bottom: 2px solid #d8d8d8;
-
 }
 
 td {
@@ -301,9 +311,8 @@ code {
     "Liberation Mono",
     Menlo,
     Courier,
-    monospace
-  ;
-  padding: .25rem .5rem;
+    monospace;
+  padding: 0.25rem 0.5rem;
   font-size: 90%;
   white-space: nowrap;
   background: #f3f3f3;
@@ -312,7 +321,7 @@ code {
 pre > code {
   line-height: 1.25rem;
   display: block;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1rem;
   white-space: pre;
   margin-bottom: 1.25rem;
 }
@@ -334,7 +343,8 @@ ol {
   list-style: decimal inside;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 1.25rem;
@@ -351,8 +361,7 @@ kbd {
     "Liberation Mono",
     Menlo,
     Courier,
-    monospace
-  ;
+    monospace;
   font-size: 0.64rem;
   color: #343334;
   vertical-align: middle;

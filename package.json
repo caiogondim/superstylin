@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "stylelint src/index.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/caiogondim/superstylin/issues"
   },
-  "homepage": "https://github.com/caiogondim/superstylin#readme"
+  "homepage": "https://github.com/caiogondim/superstylin#readme",
+  "devDependencies": {
+    "stylelint": "8.1.1",
+    "stylelint-config-standard": "17.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  }
 }
