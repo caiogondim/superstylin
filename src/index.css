@@ -312,7 +312,7 @@ code {
 pre > code {
   line-height: 1.25rem;
   display: block;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   white-space: pre;
   margin-bottom: 1.25rem;
 }
