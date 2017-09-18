@@ -316,7 +316,7 @@ code {
     Menlo,
     Courier,
     monospace;
-  font-size: 0.64rem;
+  font-size: 0.8rem;
   white-space: nowrap;
   background: #f3f3f3;
   padding: 0 0.328rem;
@@ -325,7 +325,7 @@ code {
 }
 
 pre > code {
-  line-height: 1.25rem;
+  line-height: 1.563em;
   display: block;
   padding: 0 1rem 1rem;
   white-space: pre;
