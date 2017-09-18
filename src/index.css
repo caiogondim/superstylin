@@ -145,9 +145,12 @@ button {
   background-color: #d8d8d8;
   color: white;
   text-decoration: none;
+  margin-bottom: 1rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: inline-block;
+  line-height: initial;
 }
 
 .button:hover,
@@ -158,6 +161,7 @@ button:hover {
   cursor: pointer;
   background-color: #c0bfc0;
   border: 2px solid #c0bfc0;
+  color: white;
 }
 
 .button-primary,
@@ -312,10 +316,12 @@ code {
     Menlo,
     Courier,
     monospace;
-  padding: 0.25rem 0.5rem;
-  font-size: 90%;
+  font-size: 0.64rem;
   white-space: nowrap;
   background: #f3f3f3;
+  padding: 0 0.328rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 pre > code {
