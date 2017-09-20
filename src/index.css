@@ -330,6 +330,7 @@ pre > code {
   padding: 0 1rem 1rem;
   white-space: pre;
   margin-bottom: 1.25rem;
+  overflow: scroll;
 }
 
 /* Blockquote
@@ -388,7 +389,7 @@ kbd {
 /* Util
 ––––––––––––––––––––––––––––––––– */
 .u-legible-width {
-  max-width: 60ch;
+  max-width: 66ch;
   width: 100%;
 }
 
