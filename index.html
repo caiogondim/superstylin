@@ -17,6 +17,24 @@
       /*min-height: 100vh;*/
     }
 
+    section h6 a {
+      text-decoration: none;
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    section h6 a::before {
+      content: "#";
+      position: absolute;
+      left: -1rem;
+      color: #d8d8d8;
+      opacity: 0;
+    }
+
+    section h6 a:hover::before {
+      opacity: 1;
+    }
+
     /* Header
     ––––––––––––––––––––––––––––––––– */
     .header__container {
@@ -119,7 +137,7 @@
           header__table-of-contents-item
           forms__color
         "><h4>FORMS</h4></a>
-        <a href="#forms" class="
+        <a href="#tables" class="
           header__table-of-contents-item
           tables__color
         "><h4>TABLES</h4></a>
@@ -131,10 +149,10 @@
           header__table-of-contents-item
           blockquote__color
         "><h4>BLOCKQUOTE</h4></a>
-        <a href="#list" class="
+        <a href="#lists" class="
           header__table-of-contents-item
           list__color
-        "><h4>LIST</h4></a>
+        "><h4>LISTS</h4></a>
         <a href="#keyboard" class="
           header__table-of-contents-item
           list__color
@@ -145,9 +163,10 @@
       </div>
     </div>
   </section>
+
   <section class="section-typography">
     <div class="container u-legible-width">
-      <h6 class="typography__color u-separator" id="typography">TYPOGRAPHY</h6>
+      <h6 class="typography__color u-separator" id="typography"><a href="#typography">typography</a></h6>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
       <h3>Heading 3</h3>
@@ -164,7 +183,7 @@
   </section>
   <section class="section-buttons">
     <div class="container u-legible-width">
-      <h6 class="buttons__color u-separator" id="buttons">BUTTONS</h6>
+      <h6 class="typography__color u-separator" id="buttons"><a href="#buttons">buttons</a></h6>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum doloribus nisi, excepturi earum debitis quisquam? Error accusantium autem rerum assumenda iusto voluptates vero, doloribus, repellendus aliquid ipsum, iure beatae sunt!
       </p>
@@ -180,7 +199,7 @@
   </section>
   <section class="section-typography">
     <div class="container u-legible-width">
-      <h6 class="forms__color u-separator" id="forms">FORMS</h6>
+      <h6 class="typography__color u-separator" id="forms"><a href="#forms">forms</a></h6>
       <form>
         <p>
           <label for="exampleEmailInput">Your email</label>
@@ -211,7 +230,7 @@
   </section>
   <section class="section-typography">
     <div class="container u-legible-width">
-      <h6 class="tables__color u-separator" id="tables">TABLES</h6>
+      <h6 class="typography__color u-separator" id="tables"><a href="#tables">tables</a></h6>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsam quibusdam libero, nobis earum totam doloremque veritatis expedita deserunt cum et distinctio, placeat dolorum in maxime, voluptates ratione optio nihil!</p>
       <table>
         <thead>
@@ -263,7 +282,7 @@
   </section>
   <section>
     <div class="container u-legible-width">
-      <h6 class="code__color u-separator" id="code">CODE</h6>
+      <h6 class="typography__color u-separator" id="code"><a href="#code">code</a></h6>
       <p>
         Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like this. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.
       </p>
@@ -277,7 +296,7 @@
 
   <section>
     <div class="container u-legible-width">
-      <h6 class="blockquote__color u-separator" id="blockquote">BLOCKQUOTE</h6>
+      <h6 class="typography__color u-separator" id="blockquote"><a href="#blockquote">blockquote</a></h6>
       <blockquote>
         <p>Being abstract is something profoundly different from being vague... The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise.
         </p>
@@ -288,7 +307,7 @@
 
   <section>
     <div class="container u-legible-width">
-      <h6 class="list__color u-separator" id="list">LIST</h6>
+      <h6 class="typography__color u-separator" id="lists"><a href="#lists">lists</a></h6>
       <div class="list__unordered-list">
         <p>Unordered list:</p>
         <ul>
@@ -327,7 +346,7 @@
 
     <section>
       <div class="container u-legible-width">
-        <h6 class="u-separator" id="keyboard">KEYBOARD</h6>
+        <h6 class="typography__color u-separator" id="keyboard"><a href="#keyboard">keyboard</a></h6>
         <p>
           <kbd>command</kbd> <kbd>shift</kbd> <kbd>C</kbd> to inspect element.<br>
           <kbd>command</kbd> <kbd>option</kbd> <kbd>I</kbd> to open DevTools.<br>
@@ -346,7 +365,7 @@
     </style>
 
     <div class="container u-legible-width">
-      <h6 class="u-separator" id="colors">COLOR</h6>
+      <h6 class="typography__color u-separator" id="colors"><a href="#colors">colors</a></h6>
       <div class="color__container">
         <div class="color__item">
           <div class="color__preview" style="background-color: #FDE876;">
