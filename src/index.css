@@ -24,6 +24,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-rendering: optimizeLegibility;
 }
 
 html {
@@ -349,11 +350,11 @@ blockquote {
 /* List
 ––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: disc outside;
+  list-style: disc inside;
 }
 
 ol {
-  list-style: decimal outside;
+  list-style: decimal inside;
 }
 
 ol,
@@ -366,10 +367,6 @@ ul {
 p + ul,
 p + ol {
   margin-top: -1.25rem;
-}
-
-li {
-  margin-left: 1rem;
 }
 
 /* Keyboard
