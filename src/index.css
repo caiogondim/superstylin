@@ -338,6 +338,7 @@ pre > code {
 blockquote {
   border-left: 0.25rem solid #d8d8d8;
   padding: 0 1rem;
+  margin-bottom: 1.25rem;
 }
 
 /* List
