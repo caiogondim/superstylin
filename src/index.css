@@ -48,7 +48,7 @@ html {
 
 body {
   margin: 0;
-  padding: 2rem;
+  padding: calc((100vw / 25) * 1.563);
   background-color: white;
   font-weight: 400;
   line-height: 1.563;
@@ -283,6 +283,43 @@ input[type=checkbox]:checked {
   border: 2px solid #343334;
 }
 
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 2px solid #d8d8d8;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}
+
+input[type=radio]:hover {
+  cursor: pointer;
+}
+
+input[type=radio]:focus,
+input[type=radio]:checked:focus {
+  border-color: #5aaafa;
+}
+
+input[type=radio]:checked {
+  border: 2px solid #343334;
+}
+
+input[type=radio]:checked::before {
+  content: "";
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background-color: #343334;
+  align-self: center;
+  border-radius: 50%;
+}
+
 /* Tables
 ––––––––––––––––––––––––––––––––– */
 table {
@@ -319,7 +356,7 @@ code {
     monospace;
   font-size: 0.8rem;
   white-space: nowrap;
-  background: #f3f3f3;
+  background: #f6f6f6;
   padding: 0 0.328rem;
   display: inline-block;
   vertical-align: middle;
@@ -328,7 +365,7 @@ code {
 pre > code {
   line-height: 1.563em;
   display: block;
-  padding: 0 1rem;
+  padding: 1rem;
   white-space: pre;
   margin-bottom: 1.25rem;
   overflow: scroll;
