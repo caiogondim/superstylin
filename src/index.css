@@ -114,6 +114,10 @@ p {
   margin-bottom: 1.25rem;
 }
 
+p > *:last-child {
+  margin-bottom: 0;
+}
+
 a {
   color: #343334;
   text-decoration-color: #d8d8d8;
@@ -360,6 +364,10 @@ code {
   padding: 0 0.328rem;
   display: inline-block;
   vertical-align: middle;
+}
+
+p > code {
+  white-space: normal;
 }
 
 pre > code {
