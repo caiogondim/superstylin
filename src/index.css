@@ -119,13 +119,12 @@ p > *:last-child {
 }
 
 a {
-  color: #343334;
-  text-decoration-color: #d8d8d8;
+  color: #4178be;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #343334;
-  text-decoration-color: #343334;
+  text-decoration: underline;
 }
 
 small {
