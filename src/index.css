@@ -47,13 +47,12 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: calc((100vw / 25) * 1.563);
+  padding: 0;
+  margin: calc((100vw / 25) * 1.563);
   background-color: white;
   font-weight: 400;
   line-height: 1.563;
   color: #343334;
-  min-width: 100vw;
 }
 
 /* Typography
@@ -65,7 +64,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1em;
   font-weight: bold;
 }
 
@@ -133,6 +133,7 @@ small {
 
 hr {
   border: 1px solid #343334;
+  margin: 3.052rem 0;
 }
 
 /* Buttons
@@ -460,4 +461,8 @@ abbr:hover {
   padding-top: 0.5rem;
   margin-bottom: 2rem;
   width: 100%;
+}
+
+.u-horizontal-center {
+  margin: 0 auto;
 }
