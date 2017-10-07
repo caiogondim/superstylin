@@ -433,6 +433,17 @@ kbd {
   border-bottom: solid 2px #a6a5a6;
 }
 
+/* Abbreviation
+––––––––––––––––––––––––––––––––– */
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dashed #949394;
+}
+
+abbr:hover {
+  cursor: help;
+}
+
 /* Util
 ––––––––––––––––––––––––––––––––– */
 .u-readable {
