@@ -105,13 +105,8 @@ h6 {
   line-height: 1.5;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.563rem;
 }
 
 p > *:last-child {
@@ -329,7 +324,7 @@ input[type=radio]:checked::before {
 table {
   width: 100%;
   border-spacing: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.563rem;
 }
 
 th,
@@ -375,7 +370,7 @@ pre > code {
   display: block;
   padding: 1rem;
   white-space: pre;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.563rem;
   overflow: scroll;
 }
 
@@ -389,29 +384,31 @@ pre > code::after {
 blockquote {
   border-left: 0.25rem solid #d8d8d8;
   padding: 0 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.563rem;
 }
 
 /* List
 ––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  list-style: disc outside;
 }
 
 ol {
-  list-style: decimal inside;
+  list-style: decimal outside;
 }
 
 ol,
 ul {
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.563rem;
 }
 
-p + ul,
-p + ol {
-  margin-top: -1.25rem;
+li {
+  margin-left: 1rem;
+  margin-bottom: 0.64rem;
 }
 
 /* Keyboard
