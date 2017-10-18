@@ -50,7 +50,7 @@ body {
   padding: 0;
   margin: calc((100vw / 25) * 1.563);
   background-color: white;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.563;
   color: #343334;
 }
