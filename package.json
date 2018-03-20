@@ -2,7 +2,7 @@
   "name": "superstylin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.css",
   "scripts": {
     "test": "stylelint src/index.css"
   },
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/caiogondim/superstylin/issues"
   },
