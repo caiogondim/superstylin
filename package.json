@@ -2,7 +2,7 @@
   "name": "superstylin",
   "version": "1.0.1",
   "description": "",
-  "main": "index.css",
+  "main": "src/index.css",
   "scripts": {
     "test": "stylelint src/index.css"
   },
