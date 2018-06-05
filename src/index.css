@@ -206,7 +206,8 @@ input[type=text],
 input[type=number] {
   padding: 0.5rem;
   font-size: 1rem;
-  border: 2px solid #d8d8d8;
+  border: 2px solid #f6f6f6;
+  background-color: #f6f6f6;
   color: #343334;
   border-radius: 0;
   -webkit-appearance: none;
@@ -222,19 +223,26 @@ input[type=checkbox] {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #5aaafa;
+  border: 2px solid #5aaafa;
   outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border: 2px solid #ff7d87;
+  box-shadow: none;
 }
 
 select {
   -webkit-appearance: none;
   padding: 0.5rem;
   font-size: 1rem;
-  border: 2px solid #d8d8d8;
+  border: 2px solid #f6f6f6;
   color: #343334;
   border-radius: 0;
   height: 2.5rem;
-  background-color: white;
+  background-color: #f6f6f6;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.304 125.304"><path d="M62.652 103.895L0 21.41h125.304" fill="#343334"/></svg>');
   background-repeat: no-repeat;
   background-size: 1rem;
@@ -246,13 +254,26 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   font-size: 1rem;
-  border: 2px solid #d8d8d8;
+  border: 2px solid #f6f6f6;
   color: #343334;
   border-radius: 0;
   resize: vertical;
-  background-color: white;
+  background-color: #f6f6f6;;
   box-sizing: border-box;
   padding: 0.5rem;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'avenir next',
+    avenir,
+    'helvetica neue',
+    helvetica,
+    ubuntu,
+    roboto,
+    noto,
+    'segoe ui',
+    arial,
+    sans-serif;
 }
 
 input[type=checkbox] {
