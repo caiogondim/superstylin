@@ -120,6 +120,7 @@ a {
   color: #343334;
   text-decoration: underline;
   text-decoration-color: #c0bfc0;
+  -webkit-text-decoration-color: #c0bfc0;
 }
 
 a:hover {
