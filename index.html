@@ -38,7 +38,7 @@
     /* Header
     ––––––––––––––––––––––––––––––––– */
     .header__container {
-      min-height: 100vh;
+      min-height: calc(100vh - ((100vh / 25) * 1.563)); /* ((100vh / 25) * 1.563) == top padding on body */
       display: flex;
       align-items: center;
       padding-top: 0;
