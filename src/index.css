@@ -167,6 +167,7 @@ button:hover {
   background-color: #c0bfc0;
   border: 2px solid #c0bfc0;
   color: white;
+  text-decoration: none;
 }
 
 .button-primary,
@@ -187,14 +188,17 @@ input[type=button].button-primary:hover {
   color: white;
   background-color: #272727;
   border: 2px solid #272727;
+  text-decoration: none;
 }
 
+.button:focus,
 .button-primary:focus,
-button.button-primary:focus,
+button:focus,
 input[type=submit].button-primary:focus,
 input[type=reset].button-primary:focus,
 input[type=button].button-primary:focus {
-  border-color: #4178be;
+  border-color: #5aaafa;
+  outline: none;
 }
 
 /* Form
@@ -363,6 +367,7 @@ th {
   font-weight: bold;
   text-align: left;
   border-bottom: 2px solid #d8d8d8;
+  color: #d8d8d8;
 }
 
 td {
