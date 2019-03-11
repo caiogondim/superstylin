@@ -146,9 +146,8 @@ button {
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
   border-radius: 0;
-  border: 2px solid #d8d8d8;
-  background-color: #d8d8d8;
-  color: white;
+  border: 2px solid #f3f3f3;
+  background-color: #f3f3f3;
   text-decoration: none;
   margin-bottom: 1rem;
   -webkit-appearance: none;
@@ -158,26 +157,25 @@ button {
   line-height: initial;
 }
 
+.button-primary,
+input[type=submit].button-primary,
+input[type=reset].button-primary,
+input[type=button].button-primary,
+button.button-primary {
+  background-color: #343334;
+  border: 2px solid #343334;
+  color: white;
+}
+
 .button:hover,
 input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
 button:hover {
   cursor: pointer;
-  background-color: #c0bfc0;
-  border: 2px solid #c0bfc0;
-  color: white;
+  background-color: #eaeaea;
+  border: 2px solid #eaeaea;
   text-decoration: none;
-}
-
-.button-primary,
-button.button-primary,
-input[type=submit].button-primary,
-input[type=reset].button-primary,
-input[type=button].button-primary {
-  color: white;
-  background-color: #343334;
-  border: 2px solid #343334;
 }
 
 .button-primary:hover,
@@ -265,7 +263,7 @@ textarea {
   color: #343334;
   border-radius: 0;
   resize: vertical;
-  background-color: #f6f6f6;;
+  background-color: #f6f6f6;
   box-sizing: border-box;
   padding: 0.5rem;
   font-family:
