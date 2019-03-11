@@ -355,6 +355,7 @@ table {
   width: 100%;
   border-spacing: 0;
   margin-bottom: 1.563rem;
+  font-variant-numeric: tabular-nums;
 }
 
 th,
