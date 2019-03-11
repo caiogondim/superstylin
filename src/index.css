@@ -423,6 +423,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: disc outside;
+  font-variant-numeric: tabular-nums;
 }
 
 ol {
