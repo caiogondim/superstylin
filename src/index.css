@@ -123,10 +123,16 @@ a {
   text-decoration: underline;
   text-decoration-color: #c0bfc0;
   -webkit-text-decoration-color: #c0bfc0;
+  border-radius: 5px;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+a:focus {
+  box-shadow: 0 0 0 2px #5aaafa;
+  outline: none;
 }
 
 small {
