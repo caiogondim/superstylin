@@ -27,6 +27,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -121,7 +123,6 @@ a {
   text-decoration: underline;
   text-decoration-color: #c0bfc0;
   -webkit-text-decoration-color: #c0bfc0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -158,9 +159,9 @@ button {
   display: inline-block;
   line-height: initial;
   transition: background-color 200ms ease-in-out, border 200ms ease-in-out;
-  -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  user-select: none;
 }
 
 .button-primary,
@@ -226,11 +227,6 @@ input[type=number] {
   appearance: none;
 }
 
-input[type=checkbox] {
-  display: inline-block;
-  height: 1rem;
-}
-
 input:focus,
 select:focus,
 textarea:focus {
@@ -288,6 +284,8 @@ textarea {
 }
 
 input[type=checkbox] {
+  display: inline-block;
+  height: 1rem;
   font-size: 1rem;
   border-radius: 5px;
   -webkit-appearance: none;
