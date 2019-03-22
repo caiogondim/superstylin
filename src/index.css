@@ -148,8 +148,8 @@ button {
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
   border-radius: 5px;
-  border: 2px solid #eaeaea;
-  background-color: #eaeaea;
+  border: 2px solid #d8d8d8;
+  background-color: #d8d8d8;
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -180,8 +180,8 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover {
   cursor: pointer;
-  background-color: #d8d8d8;
-  border: 2px solid #d8d8d8;
+  background-color: #c0bfc0;
+  border: 2px solid #c0bfc0;
   text-decoration: none;
 }
 
@@ -202,7 +202,7 @@ button:focus,
 input[type=submit].button-primary:focus,
 input[type=reset].button-primary:focus,
 input[type=button].button-primary:focus {
-  border-color: #5aaafa;
+  border-color: #d8d8d8;
   outline: none;
 }
 
