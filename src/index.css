@@ -145,7 +145,7 @@ input[type=button],
 button {
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
-  border-radius: 0;
+  border-radius: 5px;
   border: 2px solid #f3f3f3;
   background-color: #f3f3f3;
   text-decoration: none;
@@ -214,7 +214,7 @@ input[type=number] {
   border: 2px solid #f6f6f6;
   background-color: #f6f6f6;
   color: #343334;
-  border-radius: 0;
+  border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -244,8 +244,8 @@ select {
   padding: 0.5rem;
   font-size: 1rem;
   border: 2px solid #f6f6f6;
+  border-radius: 5px;
   color: #343334;
-  border-radius: 0;
   height: 2.5rem;
   background-color: #f6f6f6;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.304 125.304"><path d="M62.652 103.895L0 21.41h125.304" fill="#343334"/></svg>');
@@ -261,7 +261,7 @@ textarea {
   font-size: 1rem;
   border: 2px solid #f6f6f6;
   color: #343334;
-  border-radius: 0;
+  border-radius: 5px;
   resize: vertical;
   background-color: #f6f6f6;
   box-sizing: border-box;
@@ -283,7 +283,7 @@ textarea {
 
 input[type=checkbox] {
   font-size: 1rem;
-  border-radius: 0;
+  border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -389,6 +389,7 @@ code {
   padding: 0 0.328rem;
   display: inline-block;
   vertical-align: middle;
+  border-radius: 5px;
 }
 
 p > code {
@@ -460,6 +461,7 @@ kbd {
   background-color: #f9f9f9;
   border: solid 1px #d8d8d8;
   border-bottom: solid 2px #a6a5a6;
+  border-radius: 5px;
 }
 
 /* Abbreviation
