@@ -146,15 +146,17 @@ button {
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
   border-radius: 5px;
-  border: 2px solid #f3f3f3;
-  background-color: #f3f3f3;
+  border: 2px solid #d8d8d8;
+  background-color: #d8d8d8;
   text-decoration: none;
+  font-weight: bold;
   margin-bottom: 1rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   display: inline-block;
   line-height: initial;
+  transition: background-color 200ms ease-in-out, border 200ms ease-in-out;
 }
 
 .button-primary,
@@ -173,8 +175,8 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover {
   cursor: pointer;
-  background-color: #eaeaea;
-  border: 2px solid #eaeaea;
+  background-color: #c0bfc0;
+  border: 2px solid #c0bfc0;
   text-decoration: none;
 }
 
@@ -370,7 +372,7 @@ th {
 }
 
 td {
-  border-bottom: 2px solid #eaeaea;
+  border-bottom: 2px solid #d8d8d8;
 }
 
 /* Code
