@@ -121,6 +121,7 @@ a {
   text-decoration: underline;
   text-decoration-color: #c0bfc0;
   -webkit-text-decoration-color: #c0bfc0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
@@ -157,6 +158,7 @@ button {
   display: inline-block;
   line-height: initial;
   transition: background-color 200ms ease-in-out, border 200ms ease-in-out;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .button-primary,
