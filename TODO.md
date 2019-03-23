@@ -1,0 +1,2 @@
+- Fix buttons hover
+- Fix buttons layout on mobile
