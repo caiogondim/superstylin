@@ -123,7 +123,7 @@ a {
   text-decoration: underline;
   text-decoration-color: #c0bfc0;
   -webkit-text-decoration-color: #c0bfc0;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 a:hover {
@@ -153,7 +153,7 @@ input[type=button],
 button {
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid #d8d8d8;
   background-color: #d8d8d8;
   text-decoration: none;
@@ -227,7 +227,7 @@ input[type=number] {
   border: 2px solid #f6f6f6;
   background-color: #f6f6f6;
   color: #343334;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -252,7 +252,7 @@ select {
   padding: 0.5rem;
   font-size: 1rem;
   border: 2px solid #f6f6f6;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #343334;
   height: 2.5rem;
   background-color: #f6f6f6;
@@ -269,7 +269,7 @@ textarea {
   font-size: 1rem;
   border: 2px solid #f6f6f6;
   color: #343334;
-  border-radius: 5px;
+  border-radius: 10px;
   resize: vertical;
   background-color: #f6f6f6;
   box-sizing: border-box;
@@ -399,7 +399,7 @@ code {
   padding: 0 0.328rem;
   display: inline-block;
   vertical-align: middle;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 p > code {
@@ -471,7 +471,7 @@ kbd {
   background-color: #f9f9f9;
   border: solid 1px #d8d8d8;
   border-bottom: solid 2px #a6a5a6;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* Abbreviation

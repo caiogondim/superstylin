@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Suprstylin.css</title>
+  <title>Superstylin.css</title>
   <link rel="icon" type="image/png" href="./icon.png" />
   <link rel="stylesheet" href="src/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,7 +48,7 @@
     /* Header
     ––––––––––––––––––––––––––––––––– */
     .header__container {
-      min-height: calc(100vh - ((100vh / 25) * 1.563)); /* ((100vh / 25) * 1.563) == top padding on body */
+      min-height: 100vh;
       display: flex;
       align-items: center;
       padding-top: 0;
@@ -62,29 +62,24 @@
       display: block;
     }
 
-    .header__table-of-contents {
-      display: flex;
-      flex-wrap: wrap;
+    /* Table of Contents
+    ––––––––––––––––––––––––––––––––– */
+    .section-toc {
+    }
+
+    .header__table-of-contents-meta {
+      color: #d8d8d8;
+      margin: 0.328rem 0;
     }
 
     .header__table-of-contents-item {
-      min-width: 49%;
-      flex-basis: 50%;
-      flex-shrink: 1;
-      display: inline-block;
+      display: block;
       margin: 0.328rem 0;
       color: inherit;
-      text-decoration: none;
     }
 
     .header__table-of-contents-item h6 {
       margin: 0;
-    }
-
-    @media (max-width: 500px) {
-      .header__table-of-contents-item {
-        min-width: 100%;
-      }
     }
 
     /* Buttons
@@ -138,17 +133,23 @@
     <div class="u-readable">
       <header>
         <h2><img src="./icon.svg" class="header__logo" /></h2>
-        <h2 class="header__logo-text">Suprstylin</h2>
+        <h2 class="header__logo-text">Superstylin</h2>
       </header>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sed odio facilis dignissimos laborum ut soluta <a href="">lorem</a> rerum! Corrupti quibusdam, quas error natus labore libero ducimus distinctio obcaecati nobis maxime neque.</p>
+    </div>
+  </section>
+
+  <section class="section-toc">
+    <div class="container u-readable">
       <div class="header__table-of-contents">
+        <h6 class="section__header u-separator" id="typography">
+          <a href="#typography">Table of Contents</a>
+        </h6>
         <a href="#typography" class="
           header__table-of-contents-item
-          typography__color
         "><h6>TYPOGRAPHY</h6></a>
         <a href="#buttons" class="
           header__table-of-contents-item
-          buttons__color
         "><h6>BUTTONS</h6></a>
         <a href="#forms" class="
           header__table-of-contents-item

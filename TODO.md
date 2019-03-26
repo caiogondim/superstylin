@@ -1,2 +1,6 @@
 - Fix buttons hover
-- Fix buttons layout on mobile
+- outline with tab only (not on click)
+- installation section
+- hide colors
+- remove spinner
+- dark theme
