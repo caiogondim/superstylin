@@ -190,8 +190,8 @@ button {
   input[type=reset],
   input[type=button],
   button {
-    background-color: #464646;
-    border-color: #464646;
+    background-color: #595859;
+    border-color: #595859;
     color: white;
   }
 }
@@ -201,8 +201,8 @@ input[type=submit].button-primary,
 input[type=reset].button-primary,
 input[type=button].button-primary,
 button.button-primary {
-  background-color: #eaeaea;
-  border: 2px solid #eaeaea;
+  background-color: #343334;
+  border: 2px solid #343334;
   color: white;
 }
 
@@ -494,8 +494,8 @@ th {
 
 @media (prefers-color-scheme: dark) {
   th {
-    border-color: #464646;
-    color: #464646;
+    border-color: #595859;
+    color: #595859;
   }
 }
 
@@ -505,7 +505,7 @@ td {
 
 @media (prefers-color-scheme: dark) {
   td {
-    border-color: #464646;
+    border-color: #595859;
   }
 }
 
@@ -530,7 +530,7 @@ code {
 
 @media (prefers-color-scheme: dark) {
   code {
-    background-color: #464646;
+    background-color: #595859;
   }
 }
 
