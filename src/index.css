@@ -54,10 +54,17 @@ html {
 body {
   padding: 0;
   margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
-  background-color: white;
+  background-color: whitw;
   font-weight: 400;
   line-height: 1.563;
-  color: #343334;
+  color: #272727;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: #272727;
+  }
 }
 
 /* Typography
@@ -119,11 +126,18 @@ p > *:last-child {
 }
 
 a {
-  color: #343334;
+  color: inherit;
   text-decoration: underline;
   text-decoration-color: #c0bfc0;
   -webkit-text-decoration-color: #c0bfc0;
   border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    text-decoration-color: #777677;
+    -webkit-text-decoration-color: #777677;
+  }
 }
 
 a:hover {
@@ -170,14 +184,38 @@ button {
   user-select: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  .button,
+  input[type=submit],
+  input[type=reset],
+  input[type=button],
+  button {
+    background-color: #464646;
+    border-color: #464646;
+    color: white;
+  }
+}
+
 .button-primary,
 input[type=submit].button-primary,
 input[type=reset].button-primary,
 input[type=button].button-primary,
 button.button-primary {
-  background-color: #343334;
-  border: 2px solid #343334;
+  background-color: #eaeaea;
+  border: 2px solid #eaeaea;
   color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .button-primary,
+  input[type=submit].button-primary,
+  input[type=reset].button-primary,
+  input[type=button].button-primary,
+  button.button-primary {
+    background-color: white;
+    border: 2px solid white;
+    color: #272727;
+  }
 }
 
 .button:hover,
@@ -191,8 +229,18 @@ button:hover {
   text-decoration: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  .button:hover,
+  input[type=submit]:hover,
+  input[type=reset]:hover,
+  input[type=button]:hover,
+  button:hover {
+    background-color: #595859;
+    border: 2px solid #595859;
+  }
+}
+
 .button-primary:hover,
-button.button-primary:hover,
 input[type=submit].button-primary:hover,
 input[type=reset].button-primary:hover,
 input[type=button].button-primary:hover {
@@ -202,13 +250,24 @@ input[type=button].button-primary:hover {
   text-decoration: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  .button-primary:hover,
+  input[type=submit].button-primary:hover,
+  input[type=reset].button-primary:hover,
+  input[type=button].button-primary:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: #272727;
+  }
+}
+
 .button:focus,
 .button-primary:focus,
 button:focus,
 input[type=submit].button-primary:focus,
 input[type=reset].button-primary:focus,
 input[type=button].button-primary:focus {
-  border-color: #d8d8d8;
+  border-color: #5aaafa;
   outline: none;
 }
 
@@ -231,6 +290,16 @@ input[type=number] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type=email],
+  input[type=text],
+  input[type=number] {
+    background-color: #595859;
+    border-color: #595859;
+    color: white;
+  }
 }
 
 input:focus,
@@ -262,6 +331,15 @@ select {
   background-position: center right 0.5rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  select {
+    background-color: #595859;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.304 125.304"><path d="M62.652 103.895L0 21.41h125.304" fill="#ffffff"/></svg>');
+    border-color: #595859;
+    color: white;
+  }
+}
+
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -289,6 +367,14 @@ textarea {
     sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  textarea {
+    background-color: #595859;
+    border-color: #595859;
+    color: white;
+  }
+}
+
 input[type=checkbox] {
   display: inline-block;
   height: 1rem;
@@ -302,6 +388,13 @@ input[type=checkbox] {
   background-color: white;
   align-self: center;
   margin-right: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type=checkbox] {
+    background-color: #343434;
+    border-color: white;
+  }
 }
 
 input[type=checkbox]:focus,
@@ -318,6 +411,14 @@ input[type=checkbox]:checked {
   background-size: contain;
   background-color: #343334;
   border: 2px solid #343334;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type=checkbox]:checked {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="78.369" height="78.369" viewBox="0 0 78.369 78.369"><path fill="#343434" d="M78.05 19.015l-48.592 48.59c-.428.43-1.12.43-1.548 0L.32 40.016c-.427-.426-.427-1.12 0-1.547l6.704-6.704c.428-.427 1.12-.427 1.548 0l20.113 20.112 41.113-41.113c.43-.427 1.12-.427 1.548 0l6.703 6.704c.427.427.427 1.12 0 1.548z"/></svg>');
+    background-color: white;
+    border: 2px solid white;
+  }
 }
 
 input[type=radio] {
@@ -348,6 +449,12 @@ input[type=radio]:checked {
   border: 2px solid #343334;
 }
 
+@media (prefers-color-scheme: dark) {
+  input[type=radio]:checked {
+    border: 2px solid white;
+  }
+}
+
 input[type=radio]:checked::before {
   content: "";
   width: calc(100% - 4px);
@@ -355,6 +462,12 @@ input[type=radio]:checked::before {
   background-color: #343334;
   align-self: center;
   border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type=radio]:checked::before {
+    background-color: white;
+  }
 }
 
 /* Tables
@@ -379,8 +492,21 @@ th {
   color: #d8d8d8;
 }
 
+@media (prefers-color-scheme: dark) {
+  th {
+    border-color: #464646;
+    color: #464646;
+  }
+}
+
 td {
   border-bottom: 2px solid #d8d8d8;
+}
+
+@media (prefers-color-scheme: dark) {
+  td {
+    border-color: #464646;
+  }
 }
 
 /* Code
@@ -400,6 +526,12 @@ code {
   display: inline-block;
   vertical-align: middle;
   border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    background-color: #464646;
+  }
 }
 
 p > code {
@@ -527,6 +659,18 @@ abbr:hover {
   width: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+  .u-separator {
+    border-color: white;
+  }
+}
+
 .u-horizontal-center {
   margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .superstylin__invert-on-dark {
+    filter: invert(100%);
+  }
 }

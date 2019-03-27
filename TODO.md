@@ -4,3 +4,7 @@
 - hide colors
 - remove spinner
 - dark theme
+- neutral black colors
+- move gray and neutral colors to top
+- dark mode section
+- button animation
