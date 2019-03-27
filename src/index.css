@@ -178,7 +178,10 @@ button {
   appearance: none;
   display: inline-block;
   line-height: initial;
-  transition: background-color 200ms ease-in-out, border 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    border 200ms ease-in-out,
+    transform 200ms ease-in-out;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
@@ -216,6 +219,15 @@ button.button-primary {
     border: 2px solid white;
     color: #272727;
   }
+}
+
+.button:active,
+.button-primary:active,
+input[type=submit]:active,
+input[type=reset]:active,
+input[type=button]:active,
+button:active {
+  transform: scale(0.95);
 }
 
 .button:hover,
