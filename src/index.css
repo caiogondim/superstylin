@@ -617,30 +617,6 @@ abbr:hover {
   cursor: help;
 }
 
-/* Spinner
------------ */
-.ss-spinner {
-  width: 2rem;
-  height: 2rem;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid transparent;
-  border-radius: 50%;
-  box-sizing: border-box;
-  animation: ss-spin 1s infinite linear;
-}
-
-@keyframes ss-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Util
 ––––––––––––––––––––––––––––––––– */
 .u-readable {
