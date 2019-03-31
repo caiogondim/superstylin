@@ -199,6 +199,14 @@ button {
   }
 }
 
+.button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+button:hover {
+  cursor: pointer;
+}
+
 .button-primary,
 input[type=submit].button-primary,
 input[type=reset].button-primary,
@@ -215,58 +223,6 @@ button.button-primary {
   input[type=reset].button-primary,
   input[type=button].button-primary,
   button.button-primary {
-    background-color: white;
-    border: 2px solid white;
-    color: #272727;
-  }
-}
-
-.button:active,
-.button-primary:active,
-input[type=submit]:active,
-input[type=reset]:active,
-input[type=button]:active,
-button:active {
-  transform: scale(0.95);
-}
-
-.button:hover,
-input[type=submit]:hover,
-input[type=reset]:hover,
-input[type=button]:hover,
-button:hover {
-  cursor: pointer;
-  background-color: #c0bfc0;
-  border: 2px solid #c0bfc0;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  .button:hover,
-  input[type=submit]:hover,
-  input[type=reset]:hover,
-  input[type=button]:hover,
-  button:hover {
-    background-color: #595859;
-    border: 2px solid #595859;
-  }
-}
-
-.button-primary:hover,
-input[type=submit].button-primary:hover,
-input[type=reset].button-primary:hover,
-input[type=button].button-primary:hover {
-  color: white;
-  background-color: #272727;
-  border: 2px solid #272727;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  .button-primary:hover,
-  input[type=submit].button-primary:hover,
-  input[type=reset].button-primary:hover,
-  input[type=button].button-primary:hover {
     background-color: white;
     border: 2px solid white;
     color: #272727;
