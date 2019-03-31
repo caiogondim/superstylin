@@ -360,7 +360,7 @@ input[type=checkbox] {
 
 @media (prefers-color-scheme: dark) {
   input[type=checkbox] {
-    background-color: #343434;
+    background-color: #272727;
     border-color: white;
   }
 }
@@ -402,6 +402,12 @@ input[type=radio] {
   justify-content: center;
   position: relative;
   display: flex;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type=radio] {
+    border: 2px solid white;
+  }
 }
 
 input[type=radio]:hover {
