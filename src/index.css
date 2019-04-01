@@ -555,8 +555,7 @@ ul {
 }
 
 li {
-  margin-left: 1.953rem;
-  margin-bottom: 0.64rem;
+  list-style-position: inside;
 }
 
 /* Keyboard
