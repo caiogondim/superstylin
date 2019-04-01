@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/caiogondim/superstylin#readme",
   "devDependencies": {
-    "stylelint": "8.1.1",
-    "stylelint-config-standard": "17.0.0"
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard"
