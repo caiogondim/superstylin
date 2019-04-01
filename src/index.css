@@ -133,15 +133,19 @@ a {
   border-radius: 10px;
 }
 
+a:hover {
+  text-decoration-color: #272727;
+}
+
 @media (prefers-color-scheme: dark) {
   a {
     text-decoration-color: #777677;
     -webkit-text-decoration-color: #777677;
   }
-}
 
-a:hover {
-  text-decoration: underline;
+  a:hover {
+    text-decoration-color: white;
+  }
 }
 
 a:focus {
