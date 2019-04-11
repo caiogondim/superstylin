@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Superstylin.css</title>
-  <link rel="icon" type="image/png" href="./icon.png" />
+  <link rel="icon" type="image/png" href="./favicon-light-mode.png" />
   <link rel="stylesheet" href="src/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    if (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) {
+      const favicon = document.querySelector('link[rel=icon]')
+      console.log(favicon)
+      favicon.href = './favicon-dark-mode.png'
+    }
+  </script>
 </head>
 <body>
   <style>
@@ -153,7 +160,12 @@
   <section class="header__container">
     <div class="u-readable">
       <header>
-        <h2><img src="./icon.svg" class="header__logo" /></h2>
+        <h2>
+          <picture>
+            <source srcset="./icon-dark-mode.svg" media="(prefers-color-scheme: dark)" />
+            <img src="./icon-light-mode.svg" class="header__logo" />
+          </picture>
+        </h2>
         <h2 class="header__logo-text">Superstylin</h2>
       </header>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sed odio facilis dignissimos laborum ut soluta <a href="">lorem</a> rerum! Corrupti quibusdam, quas error natus labore libero ducimus distinctio obcaecati nobis maxime neque.</p>
@@ -176,6 +188,7 @@
           <li><a href="#lists">Lists</a></li>
           <li><a href="#keyboard">Keyboard</a></li>
           <li><a href="#abbreviation">Abbreviation</a></li>
+          <li><a href="#darkmode">Dark mode</a></li>
           <li><a href="#colors">Colors</a></li>
         </ul>
       </div>
@@ -395,6 +408,47 @@
       <h6 class="section__header u-separator" id="abbreviation"><a href="#abbreviation">abbreviation</a></h6>
       <p>Hover over to see the abbreviation: <abbr title="Cascading StyleSheets">CSS</abbr></p>
       <pre><code>&lt;abbr title=&quot;Cascading StyleSheets&quot;&gt;CSS&lt;/abbr&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container u-readable">
+      <h6 class="section__header u-separator" id="darkmode"><a href="#darkmode">dark mode</a></h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, minus, molestias? Voluptates sint, voluptatem repudiandae id autem nobis. Enim architecto fuga laudantium corporis quis, nemo vitae quae ipsum ad molestias.</p>
+      <p><button class="dark-mode">Force dark mode</button></p>
+      <pre><code>&lt;html class="superstylin__dark-mode"&gt;
+  &lt;!-- Bla bla bla --&gt;
+&lt;/html&gt;</code></pre>
+      <script>
+        const $darkModeBtn = document.querySelector('button.dark-mode')
+        const $html = document.querySelector('html')
+
+        let state = {
+          isDarkModeForced: false
+        }
+
+        function setState(newState) {
+          state = {
+            ...state,
+            ...newState
+          }
+          render()
+        }
+
+        function render() {
+          if (state.isDarkModeForced) {
+            $darkModeBtn.innerText = 'Default dark mode'
+            $html.classList.add('superstylin__dark-mode')
+          } else {
+            $darkModeBtn.innerText = 'Force dark mode'
+            $html.classList.remove('superstylin__dark-mode')
+          }
+        }
+
+        $darkModeBtn.addEventListener('click', () => {
+          setState({ isDarkModeForced: !state.isDarkModeForced })
+        })
+      </script>
     </div>
   </section>
 

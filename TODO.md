@@ -2,9 +2,8 @@
 - outline with tab only (not on click)
 - installation section
 - hide colors
-- remove spinner
-- dark theme
 - neutral black colors
 - move gray and neutral colors to top
 - dark mode section
 - button animation
+- icon for darkmode (favicon as well)

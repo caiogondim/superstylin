@@ -67,6 +67,11 @@ body {
   }
 }
 
+.superstylin__dark-mode body {
+  color: white;
+  background-color: #272727;
+}
+
 /* Typography
 ––––––––––––––––––––––––––––––––– */
 
