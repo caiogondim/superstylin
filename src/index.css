@@ -136,6 +136,8 @@ a {
   text-decoration-color: #c0bfc0;
   -webkit-text-decoration-color: #c0bfc0;
   border-radius: 10px;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 }
 
 a:hover {
@@ -592,7 +594,7 @@ kbd {
 ––––––––––––––––––––––––––––––––– */
 abbr {
   text-decoration: none;
-  border-bottom: 1px dashed #949394;
+  border-bottom: 2px dashed #949394;
 }
 
 abbr:hover {
