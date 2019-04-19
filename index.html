@@ -57,6 +57,13 @@
       opacity: 1;
     }
 
+    /* Fix for Safari because list goes 1px to the left, preventing section
+    title to completely hide it */
+    ul {
+      position: relative;
+      left: 1px;
+    }
+
     /* Header
     ––––––––––––––––––––––––––––––––– */
     .header__container {
@@ -167,7 +174,7 @@
         </h2>
         <h2 class="header__logo-text">Superstylin</h2>
       </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sed odio facilis dignissimos laborum ut soluta <a href="">lorem</a> rerum! Corrupti quibusdam, quas error natus labore libero ducimus distinctio obcaecati nobis maxime neque.</p>
+      <p>Enta in de dance, plug it in and we begin.</p>
     </div>
   </section>
 

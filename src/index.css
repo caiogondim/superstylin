@@ -549,7 +549,7 @@ blockquote {
 ––––––––––––––––––––––––––––––––– */
 ul {
   margin: 0;
-  padding: 0;
+  padding: 0 1px;
   list-style: disc outside;
   font-variant-numeric: tabular-nums;
 }
