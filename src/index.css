@@ -250,6 +250,10 @@ input[type=button].button-primary:focus {
   outline: none;
 }
 
+a.button:focus {
+  box-shadow: none;
+}
+
 /* Form
 ––––––––––––––––––––––––––––––––– */
 label {
