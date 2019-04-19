@@ -58,12 +58,14 @@ body {
   font-weight: 400;
   line-height: 1.563;
   color: #272727;
+  caret-color: #272727;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     color: white;
     background-color: #272727;
+    caret-color: white;
   }
 }
 

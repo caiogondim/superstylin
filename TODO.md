@@ -7,3 +7,4 @@
 - dark mode section
 - button animation
 - icon for darkmode (favicon as well)
+- focus visible
