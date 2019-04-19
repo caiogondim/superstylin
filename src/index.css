@@ -135,7 +135,7 @@ a {
   text-decoration: underline;
   text-decoration-color: #c0bfc0;
   -webkit-text-decoration-color: #c0bfc0;
-  border-radius: 10px;
+  border-radius: 5px;
   text-underline-offset: 2px;
   text-decoration-thickness: 2px;
 }
