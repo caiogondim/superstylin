@@ -20,6 +20,7 @@
 
 /* Root
 ––––––––––––––––––––––––––––––––– */
+
 :root {
   color-scheme: light dark;
 }
@@ -146,18 +147,22 @@ a {
   text-decoration-thickness: 2px;
 }
 
-a:hover {
-  text-decoration-color: #272727;
+@media (hover:hover) {
+  a:hover {
+    text-decoration-color: #272727;
+  }
+}
+
+@media (hover:hover) and (prefers-color-scheme: dark) {
+  a:hover {
+    text-decoration-color: white;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   a {
     text-decoration-color: #777677;
     -webkit-text-decoration-color: #777677;
-  }
-
-  a:hover {
-    text-decoration-color: white;
   }
 }
 
@@ -216,12 +221,14 @@ button {
   }
 }
 
-.button:hover,
-input[type=submit]:hover,
-input[type=reset]:hover,
-input[type=button]:hover,
-button:hover {
-  cursor: pointer;
+@media (hover:hover) {
+  .button:hover,
+  input[type=submit]:hover,
+  input[type=reset]:hover,
+  input[type=button]:hover,
+  button:hover {
+    cursor: pointer;
+  }
 }
 
 .button-primary,
@@ -431,8 +438,10 @@ input[type=radio] {
   }
 }
 
-input[type=radio]:hover {
-  cursor: pointer;
+@media (hover:hover) {
+  input[type=radio]:hover {
+    cursor: pointer;
+  }
 }
 
 input[type=radio]:focus-visible,
@@ -607,8 +616,10 @@ abbr {
   border-bottom: 2px dashed #949394;
 }
 
-abbr:hover {
-  cursor: help;
+@media (hover:hover) {
+  abbr:hover {
+    cursor: help;
+  }
 }
 
 /* Util
