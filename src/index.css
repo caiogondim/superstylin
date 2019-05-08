@@ -298,6 +298,12 @@ input[type=number] {
   }
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
