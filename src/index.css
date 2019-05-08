@@ -20,6 +20,10 @@
 
 /* Root
 ––––––––––––––––––––––––––––––––– */
+:root {
+  color-scheme: light dark;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -157,7 +161,7 @@ a:hover {
   }
 }
 
-a:focus {
+a:focus-visible {
   box-shadow: 0 0 0 2px #5aaafa;
   outline: none;
 }
@@ -242,17 +246,17 @@ button.button-primary {
   }
 }
 
-.button:focus,
-.button-primary:focus,
-button:focus,
-input[type=submit].button-primary:focus,
-input[type=reset].button-primary:focus,
-input[type=button].button-primary:focus {
+.button:focus-visible,
+.button-primary:focus-visible,
+button:focus-visible,
+input[type=submit].button-primary:focus-visible,
+input[type=reset].button-primary:focus-visible,
+input[type=button].button-primary:focus-visible {
   border-color: #5aaafa;
   outline: none;
 }
 
-a.button:focus {
+a.button:focus-visible {
   box-shadow: none;
 }
 
@@ -287,9 +291,9 @@ input[type=number] {
   }
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   border: 2px solid #5aaafa;
   outline: none;
 }
@@ -382,8 +386,8 @@ input[type=checkbox] {
   }
 }
 
-input[type=checkbox]:focus,
-input[type=checkbox]:checked:focus {
+input[type=checkbox]:focus-visible,
+input[type=checkbox]:checked:focus-visible {
   border-color: #5aaafa;
 }
 
@@ -431,8 +435,8 @@ input[type=radio]:hover {
   cursor: pointer;
 }
 
-input[type=radio]:focus,
-input[type=radio]:checked:focus {
+input[type=radio]:focus-visible,
+input[type=radio]:checked:focus-visible {
   border-color: #5aaafa;
 }
 
