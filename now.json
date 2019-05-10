@@ -1,7 +1,4 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "/*/**/*", "use": "@now/static" }
-  ],
   "alias": ["superstylin.caiogondim.com"]
 }
