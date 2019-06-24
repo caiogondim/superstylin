@@ -21,10 +21,6 @@
 /* Root
 ––––––––––––––––––––––––––––––––– */
 
-:root {
-  color-scheme: light dark;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,7 +28,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -72,11 +67,6 @@ body {
     background-color: #272727;
     caret-color: white;
   }
-}
-
-.superstylin__dark-mode body {
-  color: white;
-  background-color: #272727;
 }
 
 /* Typography
@@ -147,13 +137,13 @@ a {
   text-decoration-thickness: 2px;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   a:hover {
     text-decoration-color: #272727;
   }
 }
 
-@media (hover:hover) and (prefers-color-scheme: dark) {
+@media (hover: hover) and (prefers-color-scheme: dark) {
   a:hover {
     text-decoration-color: white;
   }
@@ -178,93 +168,6 @@ small {
 hr {
   border: 1px solid #343334;
   margin: 3.052rem 0;
-}
-
-/* Buttons
-––––––––––––––––––––––––––––––––– */
-.button,
-input[type=submit],
-input[type=reset],
-input[type=button],
-button {
-  padding: 0.5rem 1.25rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 2px solid #d8d8d8;
-  background-color: #d8d8d8;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: inline-block;
-  line-height: initial;
-  transition:
-    background-color 200ms ease-in-out,
-    border 200ms ease-in-out,
-    transform 200ms ease-in-out;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  .button,
-  input[type=submit],
-  input[type=reset],
-  input[type=button],
-  button {
-    background-color: #595859;
-    border-color: #595859;
-    color: white;
-  }
-}
-
-@media (hover:hover) {
-  .button:hover,
-  input[type=submit]:hover,
-  input[type=reset]:hover,
-  input[type=button]:hover,
-  button:hover {
-    cursor: pointer;
-  }
-}
-
-.button-primary,
-input[type=submit].button-primary,
-input[type=reset].button-primary,
-input[type=button].button-primary,
-button.button-primary {
-  background-color: #343334;
-  border: 2px solid #343334;
-  color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-  .button-primary,
-  input[type=submit].button-primary,
-  input[type=reset].button-primary,
-  input[type=button].button-primary,
-  button.button-primary {
-    background-color: white;
-    border: 2px solid white;
-    color: #272727;
-  }
-}
-
-.button:focus-visible,
-.button-primary:focus-visible,
-button:focus-visible,
-input[type=submit].button-primary:focus-visible,
-input[type=reset].button-primary:focus-visible,
-input[type=button].button-primary:focus-visible {
-  border-color: #5aaafa;
-  outline: none;
-}
-
-a.button:focus-visible {
-  box-shadow: none;
 }
 
 /* Form
@@ -296,26 +199,6 @@ input[type=number] {
     border-color: #595859;
     color: white;
   }
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-}
-
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  border: 2px solid #5aaafa;
-  outline: none;
-}
-
-input:invalid,
-select:invalid,
-textarea:invalid {
-  border: 2px solid #ff7d87;
-  box-shadow: none;
 }
 
 select {
@@ -377,6 +260,26 @@ textarea {
   }
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  border: 2px solid #5aaafa;
+  outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border: 2px solid #ff7d87;
+  box-shadow: none;
+}
+
 input[type=checkbox] {
   display: inline-block;
   height: 1rem;
@@ -399,11 +302,6 @@ input[type=checkbox] {
   }
 }
 
-input[type=checkbox]:focus-visible,
-input[type=checkbox]:checked:focus-visible {
-  border-color: #5aaafa;
-}
-
 input[type=checkbox]:hover {
   cursor: pointer;
 }
@@ -413,6 +311,11 @@ input[type=checkbox]:checked {
   background-size: contain;
   background-color: #343334;
   border: 2px solid #343334;
+}
+
+input[type=checkbox]:focus-visible,
+input[type=checkbox]:checked:focus-visible {
+  border-color: #5aaafa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -444,19 +347,19 @@ input[type=radio] {
   }
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   input[type=radio]:hover {
     cursor: pointer;
   }
 }
 
+input[type=radio]:checked {
+  border: 2px solid #343334;
+}
+
 input[type=radio]:focus-visible,
 input[type=radio]:checked:focus-visible {
   border-color: #5aaafa;
-}
-
-input[type=radio]:checked {
-  border: 2px solid #343334;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -478,6 +381,61 @@ input[type=radio]:checked::before {
   input[type=radio]:checked::before {
     background-color: white;
   }
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button],
+button {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #343334;
+  border: 2px solid #343334;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  line-height: initial;
+  transition:
+    background-color 200ms ease-in-out,
+    border 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type=submit],
+  input[type=reset],
+  input[type=button],
+  button {
+    background-color: white;
+    border: 2px solid white;
+    color: #272727;
+  }
+}
+
+@media (hover: hover) {
+  input[type=submit]:hover,
+  input[type=reset]:hover,
+  input[type=button]:hover,
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+button:focus-visible,
+input[type=submit]:focus-visible,
+input[type=reset]:focus-visible,
+input[type=button]:focus-visible {
+  border-color: #5aaafa;
+  outline: none;
 }
 
 /* Tables
@@ -622,42 +580,8 @@ abbr {
   border-bottom: 2px dashed #949394;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   abbr:hover {
     cursor: help;
-  }
-}
-
-/* Util
-––––––––––––––––––––––––––––––––– */
-.u-readable {
-  max-width: 60ch;
-  width: 100%;
-}
-
-.u-full-width {
-  width: 100%;
-}
-
-.u-separator {
-  border-top: 2px solid #343334;
-  padding-top: 0.5rem;
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-  .u-separator {
-    border-color: white;
-  }
-}
-
-.u-horizontal-center {
-  margin: 0 auto;
-}
-
-@media (prefers-color-scheme: dark) {
-  .superstylin__invert-on-dark {
-    filter: invert(100%);
   }
 }

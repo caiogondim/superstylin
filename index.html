@@ -6,16 +6,18 @@
   <link rel="icon" type="image/png" href="./favicon-light-mode.png" />
   <link rel="stylesheet" href="src/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" value="light dark">
   <script>
-    if (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) {
-      const favicon = document.querySelector('link[rel=icon]')
-      favicon.href = './favicon-dark-mode.png'
-    }
+    try {
+      if (matchMedia('(prefers-color-scheme: dark)').matches) {
+        const favicon = document.querySelector('link[rel=icon]')
+        favicon.href = './favicon-dark-mode.png'
+      }
+    } catch (_) {}
   </script>
 </head>
 <body>
   <style>
-
     section {
       display: flex;
       justify-content: center;
@@ -28,8 +30,8 @@
       top: 0;
       background-color: white;
       z-index: 1;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -162,6 +164,40 @@
       }
     }
 
+    /* Util
+    ––––––––––––––––––––––––––––––––– */
+    .u-readable {
+      max-width: 60ch;
+      width: 100%;
+    }
+
+    .u-full-width {
+      width: 100%;
+    }
+
+    .u-separator {
+      border-top: 2px solid #343334;
+      padding-top: 0.5rem;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .u-separator {
+        border-color: white;
+      }
+    }
+
+    .u-horizontal-center {
+      margin: 0 auto;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .superstylin__invert-on-dark {
+        filter: invert(100%);
+      }
+    }
+
   </style>
   <section class="header__container">
     <div class="u-readable">
@@ -182,11 +218,12 @@
     <div class="container u-readable">
       <div class="header__table-of-contents">
         <h6 class="section__header u-separator" id="table-of-contents">
-          <a href="#typography">Table of Contents</a>
+          <a href="#table-of-contents">Table of Contents</a>
         </h6>
         <ul>
+          <li><a href="#what-why-how">What, Why and How</a></li>
+          <li><a href="#installation">Installation</a></li>
           <li><a href="#typography">Typography</a></li>
-          <li><a href="#buttons">Buttons</a></li>
           <li><a href="#forms">Forms</a></li>
           <li><a href="#tables">Tables</a></li>
           <li><a href="#code">Code</a></li>
@@ -201,6 +238,40 @@
     </div>
   </section>
 
+  <section class="section-what">
+    <div class="container u-readable">
+      <h6 class="section__header u-separator" id="what-why-how"><a href="#what">what, why and how</a></h6>
+
+      <h6>What</h6>
+      <p>Superstylin is a drop-in CSS library that serves as a better CSS default for your HTML.</p>
+
+      <h6>Why</h6>
+      <p>Most CSS libraries/frameworks are too big and try to solve too many problems. Superstylin is small and solves one problem only: default HTML styling.</p>
+
+      <h6>How</h6>
+      <ul>
+        <li>pure CSS</li>
+        <li>no dependencies for development or production</li>
+        <li>no additional CSS classes added on the global context</li>
+        <li>no 🐄💩</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-installation">
+    <div class="container u-readable">
+      <h6 class="section__header u-separator" id="installation"><a href="#installation">installation</a></h6>
+      <p>With npm:</p>
+
+      <pre><code>npm i superstylin</code></pre>
+
+      <p>As a drop-in in your HTML:</p>
+      <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://raw.githubusercontent.com/caiogondim/superstylin/master/src/index.css&quot;&gt;</code></pre>
+
+      <p>Or go to the <a href="https://github.com/caiogondim/superstylin" target="_blank">project's page</a>, download the CSS and copy it to your project.</p>
+    </div>
+  </section>
+
   <section class="section-typography">
     <div class="container u-readable">
       <h6 class="section__header u-separator" id="typography"><a href="#typography">typography</a></h6>
@@ -211,79 +282,49 @@
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci quisquam veniam, odio illum sed maiores aspernatur consequuntur excepturi quos! Repellat unde excepturi vitae aut voluptas fugiat voluptatum iusto, quaerat.
+        With fluid typography the text better adapts to the viewport. Try resizing your browser to see it in action.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse adipisci quisquam veniam, odio illum sed maiores aspernatur consequuntur excepturi quos! Repellat unde excepturi vitae aut voluptas fugiat voluptatum iusto, quaerat.
-      </p>
+      <p>Not only the text but all elements have their dimensions computed based on viewport size with min and max values.</p>
     </div>
   </section>
-  <section class="section-buttons">
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="buttons"><a href="#buttons">buttons</a></h6>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum doloribus nisi, excepturi earum debitis quisquam? Error accusantium autem rerum assumenda iusto voluptates vero, doloribus, repellendus aliquid ipsum, iure beatae sunt!
-      </p>
-      <p class="buttons__list" style="margin-bottom: 1ex;">
-        <!-- Standard buttons -->
-        <a class="button" href="#">Anchor</a><button>Button</button><input type="submit" value="Submit" /><input type="button" value="Button input" />
-      </p>
-      <p class="buttons__list">
-        <!-- Primary buttons -->
-        <a class="button button-primary" href="#">Anchor</a><button class="button-primary">Button</button><input class="button-primary" type="submit" value="Submit"><input class="button-primary" type="button" value="Button input">
-      </p>
-      <pre><code>&lt;!-- Standard buttons --&gt;
-&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Anchor&lt;/a&gt;
-&lt;button&gt;Button&lt;/button&gt;
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
-&lt;input type=&quot;button&quot; value=&quot;Button input&quot; /&gt;
 
-&lt;!-- Primary buttons --&gt;
-&lt;a class=&quot;button button-primary&quot; href=&quot;#&quot;&gt;Anchor&lt;/a&gt;
-&lt;button class=&quot;button-primary&quot;&gt;Button&lt;/button&gt;
-&lt;input class=&quot;button-primary&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;input class=&quot;button-primary&quot; type=&quot;button&quot; value=&quot;Button input&quot;&gt;</code></pre>
-    </div>
-  </section>
   <section class="section-typography">
     <div class="container u-readable">
       <h6 class="section__header u-separator" id="forms"><a href="#forms">forms</a></h6>
       <form>
         <p>
-          <label for="exampleEmailInput">Your email</label>
+          <label for="exampleEmailInput">Text input</label>
           <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" autocomplete="new-password">
         </p>
         <p>
-          <label for="exampleRecipientInput">Reason for contacting</label>
+          <label for="exampleRecipientInput">Select</label>
           <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Questions</option>
-            <option value="Option 2">Admiration</option>
-            <option value="Option 3">Can I get your number?</option>
+            <option value="Option 1">Lorem</option>
+            <option value="Option 2">ipsum</option>
+            <option value="Option 3">Dolor</option>
           </select>
         </p>
         <p>
-          <label for="exampleMessage">Message</label>
-          <textarea class="u-full-width" placeholder="Hi Caio …" id="exampleMessage" rows="3"></textarea>
+          <label for="exampleMessage">Textarea</label>
+          <textarea class="u-full-width" placeholder="Hi Caio …" rows="3"></textarea>
         </p>
         <p>
-          <label><input type="radio" name="lorem" value="lorem"> Lorem</label>
-          <label><input type="radio" name="lorem" value="ipsum"> Ipsum</label>
+          <label><input type="radio" name="lorem" value="lorem"> Radio</label>
+          <label><input type="radio" name="lorem" value="ipsum"> Button</label>
         </p>
         <p>
           <label class="example-send-yourself-copy">
             <input type="checkbox">
-            <span class="label-body">Send a copy to yourself</span>
+            <span class="label-body">Checkbox</span>
           </label>
         </p>
-        <input class="button-primary" type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
       </form>
     </div>
   </section>
   <section class="section-typography">
     <div class="container u-readable">
       <h6 class="section__header u-separator" id="tables"><a href="#tables">tables</a></h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsam quibusdam libero, nobis earum totam doloremque veritatis expedita deserunt cum et distinctio, placeat dolorum in maxime, voluptates ratione optio nihil!</p>
       <table>
         <thead>
           <tr>
@@ -305,29 +346,6 @@
           </tr>
         </tbody>
       </table>
-
-<pre><code>&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Age&lt;/th&gt;
-      &lt;th&gt;Height&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Stephen Curry&lt;/td&gt;
-      &lt;td&gt;27&lt;/td&gt;
-      &lt;td&gt;1,91&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Klay Thompson&lt;/td&gt;
-      &lt;td&gt;25&lt;/td&gt;
-      &lt;td&gt;2,01&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-
     </div>
   </section>
   <section>
@@ -351,12 +369,6 @@
         </p>
         <footer>— Groove Armada</footer>
       </blockquote>
-      <pre><code>&lt;blockquote&gt;
-  &lt;p&gt;
-    Enta in de dance, plug it in and we begin
-  &lt;/p&gt;
-  &lt;footer&gt;&mdash; Groove Armada&lt;/footer&gt;
-&lt;/blockquote&gt;</code></pre>
     </div>
   </section>
 
@@ -379,21 +391,6 @@
           <li>Dolor</li>
         </ol>
       </div>
-
-<pre><code>&lt;!-- Unordered list --&gt;
-&lt;ul&gt;
-  &lt;li&gt;Lorem&lt;/li&gt;
-  &lt;li&gt;Ipsum&lt;/li&gt;
-  &lt;li&gt;Dolor&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- Ordered list --&gt;
-&lt;ol&gt;
-  &lt;li&gt;Lorem&lt;/li&gt;
-  &lt;li&gt;Ipsum&lt;/li&gt;
-  &lt;li&gt;Dlior&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-
     </div>
   </section>
 
@@ -404,8 +401,6 @@
         <kbd>command</kbd> <kbd>shift</kbd> <kbd>C</kbd> to inspect element.<br>
         <kbd>command</kbd> <kbd>option</kbd> <kbd>I</kbd> to open DevTools.<br>
       </p>
-<pre><code>&lt;kbd&gt;command&lt;/kbd&gt; &lt;kbd&gt;shift&lt;/kbd&gt; &lt;kbd&gt;C&lt;/kbd&gt; to inspect element.
-&lt;kbd&gt;command&lt;/kbd&gt; &lt;kbd&gt;option&lt;/kbd&gt; &lt;kbd&gt;I&lt;/kbd&gt; to open DevTools.</code></pre>
     </div>
   </section>
 
@@ -413,687 +408,15 @@
     <div class="container u-readable">
       <h6 class="section__header u-separator" id="abbreviation"><a href="#abbreviation">abbreviation</a></h6>
       <p>Hover over to see the abbreviation: <abbr title="Cascading StyleSheets">CSS</abbr></p>
-      <pre><code>&lt;abbr title=&quot;Cascading StyleSheets&quot;&gt;CSS&lt;/abbr&gt;</code></pre>
     </div>
   </section>
 
   <section>
     <div class="container u-readable">
       <h6 class="section__header u-separator" id="darkmode"><a href="#darkmode">dark mode</a></h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, minus, molestias? Voluptates sint, voluptatem repudiandae id autem nobis. Enim architecto fuga laudantium corporis quis, nemo vitae quae ipsum ad molestias.</p>
-      <p><button class="dark-mode">Force dark mode</button></p>
-      <pre><code>&lt;html class="superstylin__dark-mode"&gt;
-  &lt;!-- Bla bla bla --&gt;
-&lt;/html&gt;</code></pre>
-      <script>
-        const $darkModeBtn = document.querySelector('button.dark-mode')
-        const $html = document.querySelector('html')
-
-        let state = {
-          isDarkModeForced: false
-        }
-
-        function setState(newState) {
-          state = {
-            ...state,
-            ...newState
-          }
-          render()
-        }
-
-        function render() {
-          if (state.isDarkModeForced) {
-            $darkModeBtn.innerText = 'Default dark mode'
-            $html.classList.add('superstylin__dark-mode')
-          } else {
-            $darkModeBtn.innerText = 'Force dark mode'
-            $html.classList.remove('superstylin__dark-mode')
-          }
-        }
-
-        $darkModeBtn.addEventListener('click', () => {
-          setState({ isDarkModeForced: !state.isDarkModeForced })
-        })
-      </script>
+      <p>Dark mode ready. Superstylin has built-in support for dark/light interfaces.</p>
     </div>
   </section>
 
-  <section class="section-color">
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="colors"><a href="#colors">colors</a></h6>
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FDE876;">
-          </div>
-          <p>
-            <b>Yellow 10</b>
-            <br>#FDE876
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FDD600;">
-          </div>
-          <p><b>Yellow 20</b><br>#FDD600</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #DBB100;">
-          </div>
-          <p>
-            <b>Yellow 30</b><br>#DBB100</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #BE9B00;">
-          </div>
-          <p>
-            <b>Yellow 40</b><br>#BE9B00</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #8C7300;">
-          </div>
-          <p>
-            <b>Yellow 50</b><br>#8C7300</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #735F00;">
-          </div>
-          <p>
-            <b>Yellow 60</b><br>#735F00</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #574A00;">
-          </div>
-          <p>
-            <b>Yellow 70</b><br>#574A00</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #3C3200;">
-          </div>
-          <p>
-            <b>Yellow 80</b><br>#3C3200</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #281E00;">
-          </div>
-          <p>
-            <b>Yellow 90</b><br>#281E00</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #020100;">
-          </div>
-          <p>
-            <b>Yellow 100</b><br>#020100</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #C8F08F;">
-          </div>
-          <p>
-            <b>Green 10</b>
-            <br>#C8F08F
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #B4E051;">
-          </div>
-          <p><b>Green 20</b><br>#B4E051</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #8CD211;">
-          </div>
-          <p>
-            <b>Green 30</b><br>#8CD211</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #5AA700;">
-          </div>
-          <p>
-            <b>Green 40</b><br>#5AA700</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #4B8400;">
-          </div>
-          <p>
-            <b>Green 50</b><br>#4B8400</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #2D660A;">
-          </div>
-          <p>
-            <b>Green 60</b><br>#2D660A</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #144D14;">
-          </div>
-          <p>
-            <b>Green 70</b><br>#144D14</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #0A3C02;">
-          </div>
-          <p>
-            <b>Green 80</b><br>#0A3C02</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #0C2808;">
-          </div>
-          <p>
-            <b>Green 90</b><br>#0C2808</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #010200;">
-          </div>
-          <p>
-            <b>Green 100</b><br>#010200</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #A7FAE6;">
-          </div>
-          <p>
-            <b>Teal 10</b>
-            <br>#A7FAE6
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #6EEDD8;">
-          </div>
-          <p><b>Teal 20</b><br>#6EEDD8</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #41D6C3;">
-          </div>
-          <p>
-            <b>Teal 30</b><br>#41D6C3</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #00B4A0;">
-          </div>
-          <p>
-            <b>Teal 40</b><br>#00B4A0</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #008571;">
-          </div>
-          <p>
-            <b>Teal 50</b><br>#008571</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #006D5D;">
-          </div>
-          <p>
-            <b>Teal 60</b><br>#006D5D</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #005448;">
-          </div>
-          <p>
-            <b>Teal 70</b><br>#005448</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #003C32;">
-          </div>
-          <p>
-            <b>Teal 80</b><br>#003C32</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #012B22;">
-          </div>
-          <p>
-            <b>Teal 90</b><br>#012B22</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #000202;">
-          </div>
-          <p>
-            <b>Teal 100</b><br>#000202</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #C0E6FF;">
-          </div>
-          <p>
-            <b>Blue 10</b>
-            <br>#C0E6FF
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #7CC7FF;">
-          </div>
-          <p><b>Blue 20</b><br>#7CC7FF</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #5AAAFA;">
-          </div>
-          <p>
-            <b>Blue 30</b><br>#5AAAFA</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #5596E6;">
-          </div>
-          <p>
-            <b>Blue 40</b><br>#5596E6</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #4178BE;">
-          </div>
-          <p>
-            <b>Blue 50</b><br>#4178BE</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #325C80;">
-          </div>
-          <p>
-            <b>Blue 60</b><br>#325C80</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #264A60;">
-          </div>
-          <p>
-            <b>Blue 70</b><br>#264A60</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #1D3649;">
-          </div>
-          <p>
-            <b>Blue 80</b><br>#1D3649</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #152935;">
-          </div>
-          <p>
-            <b>Blue 90</b><br>#152935</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #010205;">
-          </div>
-          <p>
-            <b>Blue 100</b><br>#010205</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #EED2FF;">
-          </div>
-          <p>
-            <b>Purple 10</b>
-            <br>#EED2FF
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #D7AAFF;">
-          </div>
-          <p><b>Purple 20</b><br>#D7AAFF</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #BA8FF7;">
-          </div>
-          <p>
-            <b>Purple 30</b><br>#BA8FF7</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #AF6EE8;">
-          </div>
-          <p>
-            <b>Purple 40</b><br>#AF6EE8</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #9855D4;">
-          </div>
-          <p>
-            <b>Purple 50</b><br>#9855D4</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #734098;">
-          </div>
-          <p>
-            <b>Purple 60</b><br>#734098</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #562F72;">
-          </div>
-          <p>
-            <b>Purple 70</b><br>#562F72</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #412356;">
-          </div>
-          <p>
-            <b>Purple 80</b><br>#412356</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #311A41;">
-          </div>
-          <p>
-            <b>Purple 90</b><br>#311A41</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #030103;">
-          </div>
-          <p>
-            <b>Purple 100</b><br>#030103</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FFD2FF;">
-          </div>
-          <p>
-            <b>Magenta 10</b>
-            <br>#FFD2FF
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FF9EEE;">
-          </div>
-          <p><b>Magenta 20</b><br>#FF9EEE</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FF71D4;">
-          </div>
-          <p>
-            <b>Magenta 30</b><br>#FF71D4</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FF3CA0;">
-          </div>
-          <p>
-            <b>Magenta 40</b><br>#FF3CA0</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #DB2780;">
-          </div>
-          <p>
-            <b>Magenta 50</b><br>#DB2780</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #A6266E;">
-          </div>
-          <p>
-            <b>Magenta 60</b><br>#A6266E</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #7C1C58;">
-          </div>
-          <p>
-            <b>Magenta 70</b><br>#7C1C58</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #601146;">
-          </div>
-          <p>
-            <b>Magenta 80</b><br>#601146</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #3A0B2E;">
-          </div>
-          <p>
-            <b>Magenta 90</b><br>#3A0B2E</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #040102;">
-          </div>
-          <p>
-            <b>Magenta 100</b><br>#040102</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FFD2DD;">
-          </div>
-          <p>
-            <b>Red 10</b>
-            <br>#FFD2DD
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FFA5B4;">
-          </div>
-          <p><b>Red 20</b><br>#FFA5B4</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FF7D87;">
-          </div>
-          <p>
-            <b>Red 30</b><br>#FF7D87</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FF5050;">
-          </div>
-          <p>
-            <b>Red 40</b><br>#FF5050</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #E71D32;">
-          </div>
-          <p>
-            <b>Red 50</b><br>#E71D32</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #AD1625;">
-          </div>
-          <p>
-            <b>Red 60</b><br>#AD1625</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #8C101C;">
-          </div>
-          <p>
-            <b>Red 70</b><br>#8C101C</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #6E0A1E;">
-          </div>
-          <p>
-            <b>Red 80</b><br>#6E0A1E</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #4C0A17;">
-          </div>
-          <p>
-            <b>Red 90</b><br>#4C0A17</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #040001;">
-          </div>
-          <p>
-            <b>Red 100</b><br>#040001</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FFD791;">
-          </div>
-          <p>
-            <b>Orange 10</b>
-            <br>#FFD791
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FFA573;">
-          </div>
-          <p><b>Orange 20</b><br>#FFA573</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FF7832;">
-          </div>
-          <p>
-            <b>Orange 30</b><br>#FF7832</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #FF5003;">
-          </div>
-          <p>
-            <b>Orange 40</b><br>#FF5003</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #D74108;">
-          </div>
-          <p>
-            <b>Orange 50</b><br>#D74108</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #A53725;">
-          </div>
-          <p>
-            <b>Orange 60</b><br>#A53725</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #872A0F;">
-          </div>
-          <p>
-            <b>Orange 70</b><br>#872A0F</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #6D120F;">
-          </div>
-          <p>
-            <b>Orange 80</b><br>#6D120F</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #43100B;">
-          </div>
-          <p>
-            <b>Orange 90</b><br>#43100B</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #030100;">
-          </div>
-          <p>
-            <b>Orange 100</b><br>#030100</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #eaeaea;">
-          </div>
-          <p>
-            <b>Gray 10</b>
-            <br>#eaeaea
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #d8d8d8;">
-          </div>
-          <p><b>Gray 20</b><br>#d8d8d8</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #c0bfc0;">
-          </div>
-          <p>
-            <b>Gray 30</b><br>#c0bfc0</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #a6a5a6;">
-          </div>
-          <p>
-            <b>Gray 40</b><br>#a6a5a6</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #949394;">
-          </div>
-          <p>
-            <b>Gray 50</b><br>#949394</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #777677;">
-          </div>
-          <p>
-            <b>Gray 60</b><br>#777677</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #595859;">
-          </div>
-          <p>
-            <b>Gray 70</b><br>#595859</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #464646;">
-          </div>
-          <p>
-            <b>Gray 80</b><br>#464646</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #343334;">
-          </div>
-          <p>
-            <b>Gray 90</b><br>#343334</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #272727;">
-          </div>
-          <p>
-            <b>Gray 100</b><br>#272727</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #fcfcfc;">
-          </div>
-          <p>
-            <b>White 1</b>
-            <br>#fcfcfc
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #f9f9f9;">
-          </div>
-          <p><b>White 2</b><br>#f9f9f9</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #f6f6f6;">
-          </div>
-          <p>
-            <b>White 3</b><br>#f6f6f6</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #f3f3f3;">
-          </div>
-          <p>
-            <b>White 4</b><br>#f3f3f3</p>
-        </div>
-      </div>
-
-      <div class="color__container">
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #030303;">
-          </div>
-          <p>
-            <b>Black 1</b>
-            <br>#030303
-          </p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #060606;">
-          </div>
-          <p><b>Black 2</b><br>#060606</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #090909;">
-          </div>
-          <p>
-            <b>Black 3</b><br>#090909</p>
-        </div>
-        <div class="color__item">
-          <div class="color__preview" style="background-color: #0c0c0c;">
-          </div>
-          <p>
-            <b>Black 4</b><br>#0c0c0c</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
 </body>
 </html>
