@@ -2,7 +2,9 @@
 
 # Superstylin
 
-| Enta in de dance, plug it in and we begin.
+> Enta in de dance, plug it in and we begin.
+
+Superstylin is a drop-in CSS library that serves as a better CSS default for your HTML.
 
 [Homepage](https://superstylin.caiogondim.com)
 
