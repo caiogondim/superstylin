@@ -6,6 +6,18 @@
 
 [Homepage](https://superstylin.caiogondim.com)
 
+## Installation
+
+With npm:
+```
+npm i superstylin
+```
+
+As a drop-in in your HTML:
+```
+<link rel="stylesheet" href="https://raw.githubusercontent.com/caiogondim/superstylin/master/src/index.css">
+```
+
 ## Sponsor
 
 If you found this library useful and are willing to donate, consider
