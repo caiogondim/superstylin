@@ -1,4 +1,4 @@
-<img src="https://superstylin.caiogondim.com/github-banner.svg" />
+<a href="https://superstylin.caiogondim.com"><img src="https://superstylin.caiogondim.com/github-banner.svg" /></a>
 
 # Superstylin
 
