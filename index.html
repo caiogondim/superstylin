@@ -19,9 +19,11 @@
 <body>
   <style>
     section {
-      display: flex;
-      justify-content: center;
       padding: 3.815rem 0;
+    }
+
+    section > *:last-child {
+      margin-bottom: 2rem;
     }
 
     .section__header {
@@ -92,54 +94,6 @@
     /* Table of Contents
     ––––––––––––––––––––––––––––––––– */
     .section-toc {
-    }
-
-    .header__table-of-contents-meta {
-      color: #d8d8d8;
-      margin: 0.328rem 0;
-    }
-
-    .header__table-of-contents-item {
-      display: block;
-      margin: 0.328rem 0;
-      color: inherit;
-    }
-
-    .header__table-of-contents-item h6 {
-      margin: 0;
-    }
-
-    /* Buttons
-    ––––––––––––––––––––––––––––––––– */
-    .buttons__list * {
-      margin-bottom: 1ex !important;
-      margin-right: 1ex !important;
-    }
-
-    /* Color
-    ––––––––––––––––––––––––––––––––– */
-    .color__container {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 3rem;
-    }
-
-    .color__item {
-      flex: 0 0 50%;
-    }
-
-    .color__preview {
-      padding-bottom: 50%;
-    }
-
-    @media (min-width: 800px) {
-      .color__item {
-        flex: 0 0 20%;
-      }
-
-      .color__preview {
-        padding-bottom: 75%;
-      }
     }
 
     /* List
@@ -214,150 +168,136 @@
     </div>
   </section>
 
-  <section class="section-toc">
-    <div class="container u-readable">
-      <div class="header__table-of-contents">
-        <h6 class="section__header u-separator" id="table-of-contents">
-          <a href="#table-of-contents">Table of Contents</a>
-        </h6>
-        <ul>
-          <li><a href="#what-why-how">What, Why and How</a></li>
-          <li><a href="#installation">Installation</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#tables">Tables</a></li>
-          <li><a href="#code">Code</a></li>
-          <li><a href="#blockquote">Blockquote</a></li>
-          <li><a href="#lists">Lists</a></li>
-          <li><a href="#keyboard">Keyboard</a></li>
-          <li><a href="#abbreviation">Abbreviation</a></li>
-          <li><a href="#darkmode">Dark mode</a></li>
-          <li><a href="#examples">Examples</a></li>
-        </ul>
-      </div>
-    </div>
+  <section class="section-toc header__table-of-contents container u-readable">
+    <h6 class="section__header u-separator" id="table-of-contents">
+      <a href="#table-of-contents">Table of Contents</a>
+    </h6>
+    <ul>
+      <li><a href="#what-why-how">What, Why and How</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#blockquote">Blockquote</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#keyboard">Keyboard</a></li>
+      <li><a href="#abbreviation">Abbreviation</a></li>
+      <li><a href="#darkmode">Dark mode</a></li>
+      <li><a href="#examples">Examples</a></li>
+    </ul>
   </section>
 
-  <section class="section-what">
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="what-why-how"><a href="#what">what, why and how</a></h6>
+  <section class="section-what container u-readable">
+    <h6 class="section__header u-separator" id="what-why-how"><a href="#what">what, why and how</a></h6>
 
-      <h6>What</h6>
-      <p>Superstylin is a drop-in CSS library that serves as a better CSS default for your HTML.</p>
+    <h6>What</h6>
+    <p>Superstylin is a drop-in CSS library that serves as a better CSS default for your HTML.</p>
 
-      <h6>Why</h6>
-      <p>Most CSS libraries/frameworks are too big and try to solve too many problems. Superstylin is small and solves one problem only: default HTML styling.</p>
+    <h6>Why</h6>
+    <p>Most CSS libraries/frameworks are too big and try to solve too many problems. Superstylin is small and solves one problem only: default HTML styling.</p>
 
-      <h6>How</h6>
-      <ul>
-        <li>pure CSS</li>
-        <li>no dependencies for development or production</li>
-        <li>no additional CSS classes added on the global context</li>
-        <li>no 🐄💩</li>
-      </ul>
-    </div>
+    <h6>How</h6>
+    <ul>
+      <li>pure CSS</li>
+      <li>no dependencies for development or production</li>
+      <li>no additional CSS classes added on the global context</li>
+      <li>no 🐄💩</li>
+    </ul>
   </section>
 
-  <section class="section-installation">
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="installation"><a href="#installation">installation</a></h6>
-      <p>With npm:</p>
+  <section class="section-installation container u-readable">
+    <h6 class="section__header u-separator" id="installation"><a href="#installation">installation</a></h6>
+    <p>With npm:</p>
 
-      <pre><code>npm i superstylin</code></pre>
+    <pre><code>npm i superstylin</code></pre>
 
-      <p>As a drop-in in your HTML:</p>
-      <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://raw.githubusercontent.com/caiogondim/superstylin/master/src/index.css&quot;&gt;</code></pre>
+    <p>As a drop-in in your HTML:</p>
+    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://raw.githubusercontent.com/caiogondim/superstylin/master/src/index.css&quot;&gt;</code></pre>
 
-      <p>Or go to the <a href="https://github.com/caiogondim/superstylin" target="_blank">project's page</a>, download the CSS and copy it to your project.</p>
-    </div>
+    <p>Or go to the <a href="https://github.com/caiogondim/superstylin" target="_blank">project's page</a>, download the CSS and copy it to your project.</p>
   </section>
 
-  <section class="section-typography">
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="typography"><a href="#typography">typography</a></h6>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
+  <section class="section-typography container u-readable">
+    <h6 class="section__header u-separator" id="typography"><a href="#typography">typography</a></h6>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>
+      With fluid typography the text better adapts to the viewport. Try resizing your browser to see it in action.
+    </p>
+    <p>Not only the text but all elements have their dimensions computed based on viewport size with min and max values.</p>
+  </section>
+
+  <section class="section-typography container u-readable">
+    <h6 class="section__header u-separator" id="forms"><a href="#forms">forms</a></h6>
+    <form>
       <p>
-        With fluid typography the text better adapts to the viewport. Try resizing your browser to see it in action.
+        <label for="exampleEmailInput">Text input</label>
+        <input class="u-full-width" type="email" placeholder="name@domain.com">
       </p>
-      <p>Not only the text but all elements have their dimensions computed based on viewport size with min and max values.</p>
-    </div>
+      <p>
+        <label for="exampleRecipientInput">Select</label>
+        <select class="u-full-width">
+          <option value="Option 1">Lorem</option>
+          <option value="Option 2">Ipsum</option>
+          <option value="Option 3">Dolor</option>
+        </select>
+      </p>
+      <p>
+        <label for="exampleMessage">Textarea</label>
+        <textarea class="u-full-width" placeholder="Lorem ipsum …" rows="3"></textarea>
+      </p>
+      <p>
+        <label><input type="radio" name="lorem" value="lorem"> Radio</label>
+        <label><input type="radio" name="lorem" value="ipsum"> Button</label>
+      </p>
+      <p>
+        <label class="example-send-yourself-copy">
+          <input type="checkbox">
+          <span class="label-body">Checkbox</span>
+        </label>
+      </p>
+      <input type="submit" value="Submit">
+    </form>
   </section>
 
-  <section class="section-typography">
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="forms"><a href="#forms">forms</a></h6>
-      <form>
-        <p>
-          <label for="exampleEmailInput">Text input</label>
-          <input class="u-full-width" type="email" placeholder="name@domain.com">
-        </p>
-        <p>
-          <label for="exampleRecipientInput">Select</label>
-          <select class="u-full-width">
-            <option value="Option 1">Lorem</option>
-            <option value="Option 2">Ipsum</option>
-            <option value="Option 3">Dolor</option>
-          </select>
-        </p>
-        <p>
-          <label for="exampleMessage">Textarea</label>
-          <textarea class="u-full-width" placeholder="Lorem ipsum …" rows="3"></textarea>
-        </p>
-        <p>
-          <label><input type="radio" name="lorem" value="lorem"> Radio</label>
-          <label><input type="radio" name="lorem" value="ipsum"> Button</label>
-        </p>
-        <p>
-          <label class="example-send-yourself-copy">
-            <input type="checkbox">
-            <span class="label-body">Checkbox</span>
-          </label>
-        </p>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
+  <section class="section-typography container u-readable">
+    <h6 class="section__header u-separator" id="tables"><a href="#tables">tables</a></h6>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Height</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Stephen Curry</td>
+          <td>27</td>
+          <td>1,91</td>
+        </tr>
+        <tr>
+          <td>Klay Thompson</td>
+          <td>25</td>
+          <td>2,01</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
-  <section class="section-typography">
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="tables"><a href="#tables">tables</a></h6>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Height</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Stephen Curry</td>
-            <td>27</td>
-            <td>1,91</td>
-          </tr>
-          <tr>
-            <td>Klay Thompson</td>
-            <td>25</td>
-            <td>2,01</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-  <section>
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="code"><a href="#code">code</a></h6>
-      <p>
-        Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like this. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.
-      </p>
+
+  <section class="container u-readable">
+    <h6 class="section__header u-separator" id="code"><a href="#code">code</a></h6>
+    <p>
+      Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like this. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.
+    </p>
 <pre><code>.some-class {
   background-color: red;
 }</code></pre>
-    </div>
   </section>
 
   <section>
@@ -372,59 +312,49 @@
     </div>
   </section>
 
-  <section>
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="lists"><a href="#lists">lists</a></h6>
-      <div class="list__unordered-list">
-          Unordered list:
-          <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-          </ul>
-      </div>
-      <div class="list__ordered-list">
-        Ordered list:
-        <ol>
+  <section class="container u-readable">
+    <h6 class="section__header u-separator" id="lists"><a href="#lists">lists</a></h6>
+    <div class="list__unordered-list">
+        Unordered list:
+        <ul>
           <li>Lorem</li>
           <li>Ipsum</li>
           <li>Dolor</li>
-        </ol>
-      </div>
+        </ul>
+    </div>
+    <div class="list__ordered-list">
+      Ordered list:
+      <ol>
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+      </ol>
     </div>
   </section>
 
-  <section>
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="keyboard"><a href="#keyboard">keyboard</a></h6>
-      <p>
-        <kbd>command</kbd> <kbd>shift</kbd> <kbd>C</kbd> to inspect element.<br>
-        <kbd>command</kbd> <kbd>option</kbd> <kbd>I</kbd> to open DevTools.<br>
-      </p>
-    </div>
+  <section class="container u-readable">
+    <h6 class="section__header u-separator" id="keyboard"><a href="#keyboard">keyboard</a></h6>
+    <p>
+      <kbd>command</kbd> <kbd>shift</kbd> <kbd>C</kbd> to inspect element.<br>
+      <kbd>command</kbd> <kbd>option</kbd> <kbd>I</kbd> to open DevTools.<br>
+    </p>
   </section>
 
-  <section>
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="abbreviation"><a href="#abbreviation">abbreviation</a></h6>
-      <p>Hover over to see the abbreviation: <abbr title="Cascading StyleSheets">CSS</abbr></p>
-    </div>
+  <section class="container u-readable">
+    <h6 class="section__header u-separator" id="abbreviation"><a href="#abbreviation">abbreviation</a></h6>
+    <p>Hover over to see the abbreviation: <abbr title="Cascading StyleSheets">CSS</abbr></p>
   </section>
 
-  <section>
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="darkmode"><a href="#darkmode">dark mode</a></h6>
-      <p>Dark mode ready. Superstylin has built-in support for dark/light interfaces.</p>
-    </div>
+  <section class="container u-readable">
+    <h6 class="section__header u-separator" id="darkmode"><a href="#darkmode">dark mode</a></h6>
+    <p>Dark mode ready. Superstylin has built-in support for dark/light interfaces.</p>
   </section>
 
-  <section>
-    <div class="container u-readable">
-      <h6 class="section__header u-separator" id="examples"><a href="#examples">examples</a></h6>
-      <ul>
-        <li><a href="https://caiogondim.com" target="_blank">caiogondim.com</a></li>
-      </ul>
-    </div>
+  <section class="container u-readable">
+    <h6 class="section__header u-separator" id="examples"><a href="#examples">examples</a></h6>
+    <ul>
+      <li><a href="https://caiogondim.com" target="_blank">caiogondim.com</a></li>
+    </ul>
   </section>
 
 </body>
