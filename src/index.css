@@ -522,6 +522,12 @@ blockquote {
   margin-bottom: 1.563rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    border-left: 0.25rem solid #595859;
+  }
+}
+
 /* List
 ––––––––––––––––––––––––––––––––– */
 ul {
