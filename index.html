@@ -152,6 +152,40 @@
       }
     }
 
+        /* Color
+    ––––––––––––––––––––––––––––––––– */
+    .color__container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    #colors {
+      display: none;
+    }
+
+    #colors:target {
+      display: block;
+    }
+
+    .color__item {
+      flex: 0 0 50%;
+    }
+
+    .color__preview {
+      padding-bottom: 50%;
+    }
+
+    @media (min-width: 800px) {
+      .color__item {
+        flex: 0 0 20%;
+      }
+
+      .color__preview {
+        padding-bottom: 75%;
+      }
+    }
+
   </style>
   <section class="header__container">
     <div class="u-readable">
@@ -355,6 +389,641 @@
     <ul>
       <li><a href="https://caiogondim.com" target="_blank">caiogondim.com</a></li>
     </ul>
+  </section>
+
+  <section class="section-color container u-readable" id="colors">
+    <h6 class="section__header u-separator"><a href="#colors">colors</a></h6>
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FDE876;">
+        </div>
+        <p>
+          <b>Yellow 10</b>
+          <br>#FDE876
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FDD600;">
+        </div>
+        <p><b>Yellow 20</b><br>#FDD600</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #DBB100;">
+        </div>
+        <p>
+          <b>Yellow 30</b><br>#DBB100</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #BE9B00;">
+        </div>
+        <p>
+          <b>Yellow 40</b><br>#BE9B00</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #8C7300;">
+        </div>
+        <p>
+          <b>Yellow 50</b><br>#8C7300</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #735F00;">
+        </div>
+        <p>
+          <b>Yellow 60</b><br>#735F00</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #574A00;">
+        </div>
+        <p>
+          <b>Yellow 70</b><br>#574A00</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #3C3200;">
+        </div>
+        <p>
+          <b>Yellow 80</b><br>#3C3200</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #281E00;">
+        </div>
+        <p>
+          <b>Yellow 90</b><br>#281E00</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #020100;">
+        </div>
+        <p>
+          <b>Yellow 100</b><br>#020100</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #C8F08F;">
+        </div>
+        <p>
+          <b>Green 10</b>
+          <br>#C8F08F
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #B4E051;">
+        </div>
+        <p><b>Green 20</b><br>#B4E051</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #8CD211;">
+        </div>
+        <p>
+          <b>Green 30</b><br>#8CD211</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #5AA700;">
+        </div>
+        <p>
+          <b>Green 40</b><br>#5AA700</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #4B8400;">
+        </div>
+        <p>
+          <b>Green 50</b><br>#4B8400</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #2D660A;">
+        </div>
+        <p>
+          <b>Green 60</b><br>#2D660A</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #144D14;">
+        </div>
+        <p>
+          <b>Green 70</b><br>#144D14</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #0A3C02;">
+        </div>
+        <p>
+          <b>Green 80</b><br>#0A3C02</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #0C2808;">
+        </div>
+        <p>
+          <b>Green 90</b><br>#0C2808</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #010200;">
+        </div>
+        <p>
+          <b>Green 100</b><br>#010200</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #A7FAE6;">
+        </div>
+        <p>
+          <b>Teal 10</b>
+          <br>#A7FAE6
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #6EEDD8;">
+        </div>
+        <p><b>Teal 20</b><br>#6EEDD8</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #41D6C3;">
+        </div>
+        <p>
+          <b>Teal 30</b><br>#41D6C3</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #00B4A0;">
+        </div>
+        <p>
+          <b>Teal 40</b><br>#00B4A0</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #008571;">
+        </div>
+        <p>
+          <b>Teal 50</b><br>#008571</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #006D5D;">
+        </div>
+        <p>
+          <b>Teal 60</b><br>#006D5D</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #005448;">
+        </div>
+        <p>
+          <b>Teal 70</b><br>#005448</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #003C32;">
+        </div>
+        <p>
+          <b>Teal 80</b><br>#003C32</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #012B22;">
+        </div>
+        <p>
+          <b>Teal 90</b><br>#012B22</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #000202;">
+        </div>
+        <p>
+          <b>Teal 100</b><br>#000202</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #C0E6FF;">
+        </div>
+        <p>
+          <b>Blue 10</b>
+          <br>#C0E6FF
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #7CC7FF;">
+        </div>
+        <p><b>Blue 20</b><br>#7CC7FF</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #5AAAFA;">
+        </div>
+        <p>
+          <b>Blue 30</b><br>#5AAAFA</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #5596E6;">
+        </div>
+        <p>
+          <b>Blue 40</b><br>#5596E6</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #4178BE;">
+        </div>
+        <p>
+          <b>Blue 50</b><br>#4178BE</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #325C80;">
+        </div>
+        <p>
+          <b>Blue 60</b><br>#325C80</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #264A60;">
+        </div>
+        <p>
+          <b>Blue 70</b><br>#264A60</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #1D3649;">
+        </div>
+        <p>
+          <b>Blue 80</b><br>#1D3649</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #152935;">
+        </div>
+        <p>
+          <b>Blue 90</b><br>#152935</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #010205;">
+        </div>
+        <p>
+          <b>Blue 100</b><br>#010205</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #EED2FF;">
+        </div>
+        <p>
+          <b>Purple 10</b>
+          <br>#EED2FF
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #D7AAFF;">
+        </div>
+        <p><b>Purple 20</b><br>#D7AAFF</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #BA8FF7;">
+        </div>
+        <p>
+          <b>Purple 30</b><br>#BA8FF7</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #AF6EE8;">
+        </div>
+        <p>
+          <b>Purple 40</b><br>#AF6EE8</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #9855D4;">
+        </div>
+        <p>
+          <b>Purple 50</b><br>#9855D4</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #734098;">
+        </div>
+        <p>
+          <b>Purple 60</b><br>#734098</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #562F72;">
+        </div>
+        <p>
+          <b>Purple 70</b><br>#562F72</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #412356;">
+        </div>
+        <p>
+          <b>Purple 80</b><br>#412356</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #311A41;">
+        </div>
+        <p>
+          <b>Purple 90</b><br>#311A41</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #030103;">
+        </div>
+        <p>
+          <b>Purple 100</b><br>#030103</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FFD2FF;">
+        </div>
+        <p>
+          <b>Magenta 10</b>
+          <br>#FFD2FF
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FF9EEE;">
+        </div>
+        <p><b>Magenta 20</b><br>#FF9EEE</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FF71D4;">
+        </div>
+        <p>
+          <b>Magenta 30</b><br>#FF71D4</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FF3CA0;">
+        </div>
+        <p>
+          <b>Magenta 40</b><br>#FF3CA0</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #DB2780;">
+        </div>
+        <p>
+          <b>Magenta 50</b><br>#DB2780</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #A6266E;">
+        </div>
+        <p>
+          <b>Magenta 60</b><br>#A6266E</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #7C1C58;">
+        </div>
+        <p>
+          <b>Magenta 70</b><br>#7C1C58</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #601146;">
+        </div>
+        <p>
+          <b>Magenta 80</b><br>#601146</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #3A0B2E;">
+        </div>
+        <p>
+          <b>Magenta 90</b><br>#3A0B2E</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #040102;">
+        </div>
+        <p>
+          <b>Magenta 100</b><br>#040102</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FFD2DD;">
+        </div>
+        <p>
+          <b>Red 10</b>
+          <br>#FFD2DD
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FFA5B4;">
+        </div>
+        <p><b>Red 20</b><br>#FFA5B4</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FF7D87;">
+        </div>
+        <p>
+          <b>Red 30</b><br>#FF7D87</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FF5050;">
+        </div>
+        <p>
+          <b>Red 40</b><br>#FF5050</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #E71D32;">
+        </div>
+        <p>
+          <b>Red 50</b><br>#E71D32</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #AD1625;">
+        </div>
+        <p>
+          <b>Red 60</b><br>#AD1625</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #8C101C;">
+        </div>
+        <p>
+          <b>Red 70</b><br>#8C101C</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #6E0A1E;">
+        </div>
+        <p>
+          <b>Red 80</b><br>#6E0A1E</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #4C0A17;">
+        </div>
+        <p>
+          <b>Red 90</b><br>#4C0A17</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #040001;">
+        </div>
+        <p>
+          <b>Red 100</b><br>#040001</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FFD791;">
+        </div>
+        <p>
+          <b>Orange 10</b>
+          <br>#FFD791
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FFA573;">
+        </div>
+        <p><b>Orange 20</b><br>#FFA573</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FF7832;">
+        </div>
+        <p>
+          <b>Orange 30</b><br>#FF7832</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #FF5003;">
+        </div>
+        <p>
+          <b>Orange 40</b><br>#FF5003</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #D74108;">
+        </div>
+        <p>
+          <b>Orange 50</b><br>#D74108</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #A53725;">
+        </div>
+        <p>
+          <b>Orange 60</b><br>#A53725</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #872A0F;">
+        </div>
+        <p>
+          <b>Orange 70</b><br>#872A0F</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #6D120F;">
+        </div>
+        <p>
+          <b>Orange 80</b><br>#6D120F</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #43100B;">
+        </div>
+        <p>
+          <b>Orange 90</b><br>#43100B</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #030100;">
+        </div>
+        <p>
+          <b>Orange 100</b><br>#030100</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #eaeaea;">
+        </div>
+        <p>
+          <b>Gray 10</b>
+          <br>#eaeaea
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #d8d8d8;">
+        </div>
+        <p><b>Gray 20</b><br>#d8d8d8</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #c0bfc0;">
+        </div>
+        <p>
+          <b>Gray 30</b><br>#c0bfc0</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #a6a5a6;">
+        </div>
+        <p>
+          <b>Gray 40</b><br>#a6a5a6</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #949394;">
+        </div>
+        <p>
+          <b>Gray 50</b><br>#949394</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #777677;">
+        </div>
+        <p>
+          <b>Gray 60</b><br>#777677</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #595859;">
+        </div>
+        <p>
+          <b>Gray 70</b><br>#595859</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #464646;">
+        </div>
+        <p>
+          <b>Gray 80</b><br>#464646</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #343334;">
+        </div>
+        <p>
+          <b>Gray 90</b><br>#343334</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #272727;">
+        </div>
+        <p>
+          <b>Gray 100</b><br>#272727</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #fcfcfc;">
+        </div>
+        <p>
+          <b>White 1</b>
+          <br>#fcfcfc
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #f9f9f9;">
+        </div>
+        <p><b>White 2</b><br>#f9f9f9</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #f6f6f6;">
+        </div>
+        <p>
+          <b>White 3</b><br>#f6f6f6</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #f3f3f3;">
+        </div>
+        <p>
+          <b>White 4</b><br>#f3f3f3</p>
+      </div>
+    </div>
+
+    <div class="color__container">
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #030303;">
+        </div>
+        <p>
+          <b>Black 1</b>
+          <br>#030303
+        </p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #060606;">
+        </div>
+        <p><b>Black 2</b><br>#060606</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #090909;">
+        </div>
+        <p>
+          <b>Black 3</b><br>#090909</p>
+      </div>
+      <div class="color__item">
+        <div class="color__preview" style="background-color: #0c0c0c;">
+        </div>
+        <p>
+          <b>Black 4</b><br>#0c0c0c</p>
+      </div>
+    </div>
   </section>
 
 </body>
