@@ -179,7 +179,8 @@ label {
 
 input[type=email],
 input[type=text],
-input[type=number] {
+input[type=number],
+input:not([type]) {
   padding: 0.5rem;
   font-size: 1rem;
   border: 2px solid #f6f6f6;
@@ -194,7 +195,8 @@ input[type=number] {
 @media (prefers-color-scheme: dark) {
   input[type=email],
   input[type=text],
-  input[type=number] {
+  input[type=number],
+  input:not([type]) {
     background-color: #595859;
     border-color: #595859;
     color: white;
