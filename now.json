@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "alias": ["superstylin.caiogondim.com"]
+  "alias": ["superstylin.caiogondim.com"],
+  "builds": [
+    { "src": "*", "use": "@now/static" },
+    { "src": "src/*", "use": "@now/static" }
+  ]
 }

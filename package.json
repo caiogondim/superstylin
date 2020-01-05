@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/caiogondim/superstylin.git"
   },
+  "engines": ["12.x"],
   "keywords": [],
   "author": "",
   "license": "MIT",
