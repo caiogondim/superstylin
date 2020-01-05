@@ -587,3 +587,15 @@ abbr {
     cursor: help;
   }
 }
+
+/* Details
+––––––––––––––––––––––––––––––––– */
+details > summary:focus {
+  box-shadow: 0 0 0 2px #5aaafa;
+  outline: none;
+  border-radius: 5px;
+}
+
+details > summary:hover {
+  cursor: pointer;
+}
