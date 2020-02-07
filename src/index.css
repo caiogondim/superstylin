@@ -32,7 +32,7 @@
 }
 
 html {
-  font-size: calc(20px + ((100vw - 600px) / 250));
+  font-size: calc(16px + ((100vw - 600px) / 250));
   font-family:
     -apple-system,
     BlinkMacSystemFont,
