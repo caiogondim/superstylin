@@ -1,6 +1,6 @@
 {
   "name": "superstylin",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "",
   "main": "src/index.css",
   "scripts": {
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/caiogondim/superstylin.git"
   },
-  "engines": ["12.x"],
+  "engines": [
+    "12.x"
+  ],
   "keywords": [],
   "author": "",
   "license": "MIT",
