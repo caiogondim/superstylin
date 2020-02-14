@@ -1,6 +1,3 @@
-- installation section
-- move gray and neutral colors to top
-- dark mode section
 - configure zeit now
-- variable names: --🔊-yellow-30, --🔊-scale-0, --🔊-scale-up-1, --🔊-scale-down-3
 - <progress>
+- prettier css
