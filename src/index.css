@@ -57,7 +57,7 @@ body {
   margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
   background-color: white;
   color: #272727;
-  line-height: 1.563
+  line-height: 1.563;
   caret-color: #272727;
 }
 
