@@ -417,12 +417,22 @@ button {
   }
 }
 
+input:disabled,
+button:disabled {
+  opacity: 50%;
+}
+
 @media (hover: hover) {
   input[type=submit]:hover,
   input[type=reset]:hover,
   input[type=button]:hover,
   button:hover {
     cursor: pointer;
+  }
+
+  input:disabled:hover,
+  button:disabled:hover {
+    cursor: not-allowed;
   }
 }
 
